@@ -6,7 +6,7 @@ function App() {
       {/* header  */}
       <header >
       <div>
-      <Example/>
+      <Example/>  
       </div>
         
       </header>
