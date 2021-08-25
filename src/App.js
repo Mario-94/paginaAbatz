@@ -1,32 +1,23 @@
 import "./App.css";
 import logo from "./images/Icono.png";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./Components/Home";
+import Productos from "./Components/Productos"
+import Sucursal from "./Components/Sucursal";
+import Rutas from "./Components/Rutas";
+import Nosotros from "./Components/Nosotros";
+import Contacto from "./Components/Contacto";
+import Footer from './Components/Footer'
 function App() {
   return (
     <div className="App">
-      {/* header  */}
-      <header>
-       
-      <div>
       <Router>
-        <div>
-          <nav>
+        <div >
+          <nav className="navBar">
             <ul>
               <li>
-                <Link to="/logo">
-                  <img
-                    src={logo}
-                    display="block"
-                    margin="0"
-                    auto="true"
-                    max-width="100%"
-                    width="3%"
-                  />
+                <Link to="/">
+                  <img className="logo" src={logo} alt="logo" />
                 </Link>
               </li>
               <li>
@@ -53,24 +44,25 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route exact path="/"></Route>
-            <Route exact path="/logo"></Route>
-            <Route path="/productos"></Route>
-            <Route path="/sucursales"></Route>
-            <Route exact path="/rutas"></Route>
-            <Route path="/nosotros"></Route>
-            <Route path="/contacto"></Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/productos"><Productos/></Route>
+            <Route path="/sucursales">
+              <Sucursal />
+            </Route>
+            <Route exact path="/rutas"><Rutas/></Route>
+            <Route path="/nosotros"><Nosotros/></Route>
+            <Route path="/contacto"><Contacto/></Route>
           </Switch>
         </div>
       </Router>
-            </div>
-      </header>
-      {/* body */}
-      <body></body>
 
-      {/* footer */}
 
-      <footer></footer>
+      <Footer/>
     </div>
   );
 }

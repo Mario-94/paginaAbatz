@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +23,47 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.logo {
+  margin: 0;
+  align-items: center;
+  max-width: 100%;
+  width: 3%;
+  
+}
+.navBar{
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F23838;
+}
+.homeOferta {
+  align-content: center;
+  border-radius: 25px;
+  border: 2px solid #ad5421;
+  padding: 20px; 
+    
+}
+.column {
+  box-sizing: border-box;
+  background-color:#ccc;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
 }
