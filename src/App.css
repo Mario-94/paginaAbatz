@@ -41,9 +41,29 @@
   background-color: #F23838;
 }
 .homeOferta {
+  align-content: center;
   border-radius: 25px;
   border: 2px solid #ad5421;
   padding: 20px; 
-  width: 200px;
-  height: 150px;  
+    
+}
+.column {
+  box-sizing: border-box;
+  background-color:#ccc;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
