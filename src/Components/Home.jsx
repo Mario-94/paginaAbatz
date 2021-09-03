@@ -1,5 +1,15 @@
 import React, { Component } from "react";
-import { Container, Media, Col, Row } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+  Col,
+  Row,
+} from "reactstrap";
 import "../App.css";
 
 export class Home extends Component {
@@ -9,100 +19,50 @@ export class Home extends Component {
         <h3>aqui ira el mapa</h3>
         <h1>Ofertas de la semana</h1>
         <div>
-          <Container>
-            <Row xs="1" sm="2" md="4">
-              <Col xs="6">
-                <Media>
-                  <Media body>
-                    <Media heading>Articulo</Media>
-                    <Media heading> Unidad</Media>
-                    <Media heading> Precio</Media>
-                  </Media>
-                  <Media right top href="#">
-                    <Media
-                      object
-                      src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                      width="160"
-                      height="160"
-                      alt="Generic placeholder image"
-                    />
-                  </Media>
-                </Media>
-              </Col>
-              <Col xs="6">
-                <Media>
-                  <Media body>
-                    <Media heading>Articulo</Media>
-                    <Media heading> Unidad</Media>
-                    <Media heading> Precio</Media>
-                  </Media>
-                  <Media right top href="#">
-                    <Media
-                      object
-                      src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                      width="160"
-                      height="160"
-                      alt="Generic placeholder image"
-                    />
-                  </Media>
-                </Media>
-              </Col>
-              <Col xs="6">
-                <Media>
-                  <Media body>
-                    <Media heading>Articulo</Media>
-                    <Media heading> Unidad</Media>
-                    <Media heading> Precio</Media>
-                  </Media>
-                  <Media right top href="#">
-                    <Media
-                      object
-                      src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                      width="160"
-                      height="160"
-                      alt="Generic placeholder image"
-                    />
-                  </Media>
-                </Media>
-              </Col>
-              <Col xs="6">
-                <Media>
-                  <Media body>
-                    <Media heading>Articulo</Media>
-                    <Media heading> Unidad</Media>
-                    <Media heading> Precio</Media>
-                  </Media>
-                  <Media right top href="#">
-                    <Media
-                      object
-                      src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                      width="160"
-                      height="160"
-                      alt="Generic placeholder image"
-                    />
-                  </Media>
-                </Media>
-              </Col>
-              <Col xs="6">
-                <Media>
-                  <Media body>
-                    <Media heading>Articulo</Media>
-                    <Media heading> Unidad</Media>
-                    <Media heading> Precio</Media>
-                  </Media>
-                  <Media right top href="#">
-                    <Media
-                      object
-                      src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                      width="160"
-                      height="160"
-                      alt="Generic placeholder image"
-                    />
-                  </Media>
-                </Media>
-              </Col>
-            </Row>
-          </Container>
+          <Row>
+            <Col sm="6">
+              <Card>
+                <CardImg
+                  top
+                  width="100%"
+                  src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">Articulo nombre</CardTitle>
+                  <CardSubtitle tag="h6" className="mb-2 text-muted">
+                    Precio
+                  </CardSubtitle>
+                  <CardSubtitle tag="h6" className="mb-2 text-muted">
+                    Unidad
+                  </CardSubtitle>
+                  <CardText>Descripcion</CardText>
+                  <Button>Ver producto</Button>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col sm="6">
+              <Card>
+                <CardImg
+                  top
+                  width="100%"
+                  src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">Articulo nombre</CardTitle>
+                  <CardSubtitle tag="h6" className="mb-2 text-muted">
+                    Precio
+                  </CardSubtitle>
+                  <CardSubtitle tag="h6" className="mb-2 text-muted">
+                    Unidad
+                  </CardSubtitle>
+                  <CardText>Descripcion</CardText>
+                  <Button>Ver producto</Button>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
         </div>
       </div>
     );
