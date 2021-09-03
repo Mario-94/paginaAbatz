@@ -1,37 +1,97 @@
 import React, { Component } from "react";
-import { Media, Col, Row, Container } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+  Row,
+  Col
+} from "reactstrap";
+
 export class Productos extends Component {
   render() {
     return (
       <div>
         <div>
           <p>
-            aqui ira la parte de prouctos que maneja la empresa, es un carusel{" "}
+            aqui ira la parte de prouctos que maneja la empresa, es un carusel
           </p>
         </div>
         <div>
-            <h1>Categoria de productos</h1>
-            <hr />
-        <Container>
-            <Row xs="1" sm="2" md="4">
-              <Col xs="6">
-                <Media>
-                  <Media body>
-                    Carnes frias
-                  </Media>
-                  <Media right top href="#">
-                    <Media
-                      object
-                      src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                      width="160"
-                      height="160"
-                      alt="Generic placeholder image"
-                    />
-                  </Media>
-                </Media>
-              </Col>
-              </Row>
-            </Container>
+          <h1>Categoria de productos</h1>
+        <hr />
+
+          <Row>
+            <Col sm="6">
+            <Card>
+              <CardImg
+                top
+                width="100%"
+                src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                alt="Card image cap"
+              />
+              <CardBody>
+                <CardTitle tag="h5">Articulo nombre</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  Precio
+                </CardSubtitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  Unidad
+                </CardSubtitle>
+                <CardText>Descripcion
+                </CardText>
+                <Button>Ver producto</Button>
+              </CardBody>
+            </Card>
+            </Col>
+            <Col sm="6">
+            <Card>
+              <CardImg
+                top
+                width="100%"
+                src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                alt="Card image cap"
+              />
+              <CardBody>
+                <CardTitle tag="h5">Articulo nombre</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  Precio
+                </CardSubtitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  Unidad
+                </CardSubtitle>
+                <CardText>Descripcion
+                </CardText>
+                <Button>Ver producto</Button>
+              </CardBody>
+            </Card>
+            </Col>
+            <Col sm="6">
+            <Card>
+              <CardImg
+                top
+                width="100%"
+                src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                alt="Card image cap"
+              />
+              <CardBody>
+                <CardTitle tag="h5">Articulo nombre</CardTitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  Precio
+                </CardSubtitle>
+                <CardSubtitle tag="h6" className="mb-2 text-muted">
+                  Unidad
+                </CardSubtitle>
+                <CardText>Descripcion
+                </CardText>
+                <Button>Ver producto</Button>
+              </CardBody>
+            </Card>
+            </Col>
+          </Row>
         </div>
       </div>
     );
