@@ -16,6 +16,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
+  
 } from "reactstrap";
 
 function App ()  {
@@ -86,8 +87,9 @@ function App ()  {
           </Switch>
 
       </Router>
-
       <Footer />
+      
+      
     </div>
   );
 };
