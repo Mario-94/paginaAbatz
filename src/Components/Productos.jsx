@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../App.css'
 import {
   Card,
   CardImg,
@@ -10,21 +11,20 @@ import {
   Container,
   Row,
   Col,
-  Table,
+ 
 } from "reactstrap";
-
+import Example  from "./Carousel";
 export class Productos extends Component {
   render() {
     return (
       <div>
+      
+          <Example />
+        
         <div>
-          <p>
-            aqui ira la parte de prouctos que maneja la empresa, es un carusel
-          </p>
-        </div>
-        <div>
+          <div>
           <h1>Categoria de productos</h1>
-
+          </div>
           <div>
             <Container>
               <Row>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Toast, ToastBody, ToastHeader } from "reactstrap";
+import {  ToastBody, ToastHeader } from "reactstrap";
 
 export class Nosotros extends Component {
   render() {
