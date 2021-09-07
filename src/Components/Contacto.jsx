@@ -12,11 +12,11 @@ import {
 export class Contacto extends Component {
   render() {
     return (
-      <Container>
+      <Container hover>
         {/* en esta parte es el mensaje  */}
         <h1>Dejanos tu mensaje </h1>
         <hr width="100%" />
-         {/* aqui empieza el formulario */}
+        {/* aqui empieza el formulario */}
         <Form>
           <Row>
             {/* Esta parte es el nombre y apellido */}
@@ -40,12 +40,7 @@ export class Contacto extends Component {
             </Col>
             {/* en esta parte es el corre y numero telefonico */}
             <Col xs="6">
-              <Input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Email"
-              />
+              <Input type="text" name="email" id="email" placeholder="Email" />
             </Col>
 
             <Col xs="6">
@@ -66,9 +61,8 @@ export class Contacto extends Component {
               />
               <br />
             </Col>
-
-            <FormGroup check row>
-              <Col>
+            <FormGroup check>
+              <Col xs="12">
                 <Button>Enviar</Button>
               </Col>
             </FormGroup>
