@@ -16,52 +16,61 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  
 } from "reactstrap";
 
-function App ()  {
+function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="App">
+    <div className="App" id="wrapper">
       <Router>
+        <Navbar color="danger" light expand="md" id="header">
+          <NavbarBrand>
+            <Link className="navIndex" to="/">
+              <img className="logo" width="100" src={logo} alt="logo" />
+            </Link>
+          </NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="mr-auto" navbar>
+              <NavItem>
+                <Link className="navIndex" to="/">
+                  Inicio
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="navIndex" to="/productos">
+                  Productos
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="navIndex" to="/sucursales">
+                  Sucursales
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="navIndex" to="/rutas">
+                  Rutas
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="navIndex" to="/nosotros">
+                  Nosotros
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="navIndex" to="/contacto">
+                  Contacto
+                </Link>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
 
-          <Navbar color="danger" light expand="md">
-            <NavbarBrand>
-              <Link className="navIndex" to="/">
-                <img className="logo" width="100"  src={logo} alt="logo" />
-              </Link>
-            </NavbarBrand>
-            <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
-              <Nav className="mr-auto" navbar>
-                <NavItem>
-                  <Link className="navIndex" to="/">
-                    Inicio
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link className="navIndex" to="/productos">Productos</Link>
-                </NavItem>
-                <NavItem>
-                  <Link  className="navIndex" to="/sucursales">Sucursales</Link>
-                </NavItem>
-                <NavItem>
-                  <Link className="navIndex" to="/rutas">Rutas</Link>
-                </NavItem>
-                <NavItem>
-                  <Link className="navIndex" to="/nosotros">Nosotros</Link>
-                </NavItem>
-                <NavItem>
-                  <Link className="navIndex" to="/contacto">Contacto</Link>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-
-          {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+        <div className="body">
           <Switch>
             <Route exact path="/">
               <Home />
@@ -85,13 +94,11 @@ function App ()  {
               <Contacto />
             </Route>
           </Switch>
-
+        </div>
       </Router>
       <Footer />
-      
-      
     </div>
   );
-};
+}
 
 export default App;
