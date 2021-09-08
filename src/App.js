@@ -28,7 +28,7 @@ function App() {
         <Navbar color="danger" light expand="md" id="header">
           <NavbarBrand>
             <Link className="navIndex" to="/">
-              <img className="logo" width="100" src={logo} alt="logo" />
+              <img  width="100" src={logo} alt="logo" />
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
