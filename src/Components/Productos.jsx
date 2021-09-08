@@ -135,8 +135,11 @@ export class Productos extends Component {
                   </CardBody>
                 </Card>
               </Col>
+              
             </Row>
+            
           </Container>
+         
         </div>
       </div>
     );
