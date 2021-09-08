@@ -12,7 +12,6 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import Example from "./Carousel";
 export class Productos extends Component {
   render() {
     return (
@@ -135,11 +134,8 @@ export class Productos extends Component {
                   </CardBody>
                 </Card>
               </Col>
-              
             </Row>
-            
           </Container>
-         
         </div>
       </div>
     );
