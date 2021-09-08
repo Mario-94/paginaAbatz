@@ -23,7 +23,7 @@ function App() {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="App" id="wrapper">
+    <div className="App" >
       <Router>
         <Navbar color="danger" light expand="md" id="header">
           <NavbarBrand>
@@ -96,6 +96,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      <br/>
       <Footer />
     </div>
   );
