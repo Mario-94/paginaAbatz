@@ -23,12 +23,12 @@ function App() {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="App" >
+    <div className="App">
       <Router>
-        <Navbar color="danger" light expand="md" id="header">
+        <Navbar className="navIndex" light expand="md" id="header">
           <NavbarBrand>
             <Link className="navIndex" to="/">
-              <img  width="100" src={logo} alt="logo" />
+              <img width="100" src={logo} alt="logo" />
             </Link>
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
@@ -39,26 +39,32 @@ function App() {
                   Inicio
                 </Link>
               </NavItem>
+              {/* Este     &nbsp;  lo utilizo para separar momentaneamente los nav */}
+              &nbsp;
               <NavItem>
                 <Link className="navIndex" to="/productos">
                   Productos
                 </Link>
               </NavItem>
+              &nbsp;
               <NavItem>
                 <Link className="navIndex" to="/sucursales">
                   Sucursales
                 </Link>
               </NavItem>
+              &nbsp;
               <NavItem>
                 <Link className="navIndex" to="/rutas">
                   Rutas
                 </Link>
               </NavItem>
+              &nbsp;
               <NavItem>
                 <Link className="navIndex" to="/nosotros">
                   Nosotros
                 </Link>
               </NavItem>
+              &nbsp;
               <NavItem>
                 <Link className="navIndex" to="/contacto">
                   Contacto
@@ -96,7 +102,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <br/>
+      <br />
       <Footer />
     </div>
   );

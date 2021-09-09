@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
-import { Row, Col, Container } from "reactstrap";
+import { Row, Col, Container,NavLink } from "reactstrap";
 import face from "../images/face.svg";
+
 export class Footer extends Component {
   render() {
     return (
@@ -10,7 +11,9 @@ export class Footer extends Component {
           <Row>
             <Col>
               <p>Redes sociales</p>
-              <img width="40" src={face} alt="logo" />
+              <NavLink href='https://www.facebook.com/ABATZ-1090409927663523/?hc_ref=ARQPgDU9ZQqdSa8fzmozuS4VHwAYuWWKg05GDc6CgWh6UgqTlpO8mFXsgnHJ2_kJYEs&fref=nf&__tn__=kC-R'>
+              <img width="40" src={face} alt="logo"  />
+              </NavLink>
             </Col>
             <Col>
               <p>ABARROTERA DE PATZCUARO SA DE CV.</p>

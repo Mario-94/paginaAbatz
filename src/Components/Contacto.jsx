@@ -8,11 +8,13 @@ import {
   FormGroup,
   Input,
 } from "reactstrap";
+import atencion from '../images/atencionCliente.jpg'
 
 export class Contacto extends Component {
   render() {
     return (
       <Container hover>
+        <img src={atencion} width="100%" />
         {/* en esta parte es el mensaje  */}
         <h1>Dejanos tu mensaje </h1>
         <hr width="100%" />
