@@ -20,25 +20,55 @@ export class Productos extends Component {
           {/* En esta seccion estan las tarjetas de las lineas que maneja la abarrotera  */}
           <Container>
             <Row>
-              <Col xs="6" sm="4">
-                <Card body>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
-                    alt="Card img cap"
-                  ></CardImg>
-                </Card>
+              <h1>Marcas que manejamos </h1>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
+                  alt="Card img cap"
+                />
               </Col>
-              <Col xs="6" sm="4">
-                <Card body>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
-                    alt="Card img cap"
-                  ></CardImg>
-                </Card>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
+                  alt="Card img cap"
+                />
+              </Col>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
+                  alt="Card img cap"
+                />
+              </Col>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
+                  alt="Card img cap"
+                />
+              </Col>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
+                  alt="Card img cap"
+                />
+              </Col>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
+                  alt="Card img cap"
+                />
+              </Col>
+              <Col >
+                <img
+                  className="marcas"
+                  src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
+                  alt="Card img cap"
+                />
               </Col>
             </Row>
           </Container>
