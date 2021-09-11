@@ -19,7 +19,7 @@ export class Footer extends Component {
               <p>ABARROTERA DE PATZCUARO SA DE CV.</p>
             </Col>
             <Col>
-              LIB. GRAL. IG. S/N COL CENTRO PATZCUARO, MICHOACAN CP: 61600
+              LIB. GRAL. IG. #250 COL CENTRO PATZCUARO, MICHOACAN CP: 61600
             </Col>
             <Col>
               <p>Contactos:</p>
