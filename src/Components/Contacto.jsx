@@ -14,7 +14,7 @@ export class Contacto extends Component {
   render() {
     return (
       <Container hover>
-        <img src={atencion} width="100%" />
+        <img src={atencion} width="100%" alt="mapaContacto"/>
         {/* en esta parte es el mensaje  */}
         <h1>Dejanos tu mensaje </h1>
         <hr width="100%" />
