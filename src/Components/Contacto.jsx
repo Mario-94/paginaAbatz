@@ -13,7 +13,7 @@ import atencion from '../images/atencionCliente.jpg'
 export class Contacto extends Component {
   render() {
     return (
-      <Container hover>
+      <Container >
         <img src={atencion} width="100%" alt="mapaContacto"/>
         {/* en esta parte es el mensaje  */}
         <h1>Dejanos tu mensaje </h1>

@@ -1,17 +1,7 @@
 import React, { Component } from "react";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Col,
-  Row,
-  Container,
-} from "reactstrap";
+import { Col, Row, Container } from "reactstrap";
 import "../App.css";
-import Ofertas from "./modalOfertas";
+import { ModalOfertas } from "./ModalOfertas";
 import tienda from "../images/tienda.jpg";
 
 export class Home extends Component {
@@ -30,7 +20,6 @@ export class Home extends Component {
                 loading="lazy"
                 alt="mapaHome"
               ></iframe> */}
-            
             </Col>
             <Col xs="6">
               <h3>
@@ -43,55 +32,11 @@ export class Home extends Component {
           </Row>
         </Container>
         <br />
-        <h1>Ofertas de la semana</h1>
         <div>
-          <Container>
-            <Row>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Card title</CardTitle>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Card subtitle
-                    </CardSubtitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Ofertas description="el mensaje es este" />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Card image cap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Card title</CardTitle>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Card subtitle
-                    </CardSubtitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Ofertas xs="6" description="el mensaje es este" />
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+        <h1>Ofertas de la semana</h1>
+        <ModalOfertas />
         </div>
+        
       </div>
     );
   }
