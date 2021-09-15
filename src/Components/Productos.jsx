@@ -10,7 +10,6 @@ import {
   NavLink,
   Card,
   CardImg,
-  Button,
   CardTitle,
   CardText,
   Row,
@@ -20,7 +19,7 @@ import {
 import classnames from "classnames";
 
 const Productos = (props) => {
-  const [activeTab, setActiveTab] = useState("1");
+  const [activeTab, setActiveTab] = useState(true);
 
   const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);

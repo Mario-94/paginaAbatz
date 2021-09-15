@@ -13,9 +13,8 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
-  NavItem,
+ 
 } from "reactstrap";
 
 function App() {
@@ -26,81 +25,66 @@ function App() {
     <div className="App">
       <Router>
         <Navbar className="navIndex" light expand="md" id="header">
-          <NavbarBrand>
-            <Link className="navIndex" to="/">
-              <img width="100" src={logo} alt="logo" />
-            </Link>
-          </NavbarBrand>
+          <Link className="navIndex" to="/">
+            <img width="100" src={logo} alt="logo" />
+          </Link>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              <NavItem>
-                <Link className="navIndex" to="/">
-                  Inicio
-                </Link>
-              </NavItem>
+              <Link className="navIndex" to="/">
+                Inicio
+              </Link>
               {/* Este     &nbsp;  lo utilizo para separar momentaneamente los nav */}
               &nbsp;
-              <NavItem>
-                <Link className="navIndex" to="/productos">
-                  Productos
-                </Link>
-              </NavItem>
+              <Link className="navIndex" to="/productos">
+                Productos
+              </Link>
               &nbsp;
-              <NavItem>
-                <Link className="navIndex" to="/sucursales">
-                  Sucursales
-                </Link>
-              </NavItem>
+              <Link className="navIndex" to="/sucursales">
+                Sucursales
+              </Link>
               &nbsp;
-              <NavItem>
-                <Link className="navIndex" to="/rutas">
-                  Rutas
-                </Link>
-              </NavItem>
+              <Link className="navIndex" to="/rutas">
+                Rutas
+              </Link>
               &nbsp;
-              <NavItem>
-                <Link className="navIndex" to="/nosotros">
-                  Nosotros
-                </Link>
-              </NavItem>
+              <Link className="navIndex" to="/nosotros">
+                Nosotros
+              </Link>
               &nbsp;
-              <NavItem>
-                <Link className="navIndex" to="/contacto">
-                  Contacto
-                </Link>
-              </NavItem>
+              <Link className="navIndex" to="/contacto">
+                Contacto
+              </Link>
             </Nav>
           </Collapse>
         </Navbar>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <div className="body">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/productos">
-              <Productos />
-            </Route>
-            <Route path="/sucursales">
-              <Sucursal />
-            </Route>
-            <Route exact path="/rutas">
-              <Rutas />
-            </Route>
-            <Route path="/nosotros">
-              <Nosotros />
-            </Route>
-            <Route path="/contacto">
-              <Contacto />
-            </Route>
-          </Switch>
-        </div>
+
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/productos">
+            <Productos />
+          </Route>
+          <Route path="/sucursales">
+            <Sucursal />
+          </Route>
+          <Route exact path="/rutas">
+            <Rutas />
+          </Route>
+          <Route path="/nosotros">
+            <Nosotros />
+          </Route>
+          <Route path="/contacto">
+            <Contacto />
+          </Route>
+        </Switch>
       </Router>
       <br />
       <Footer />
