@@ -19,7 +19,7 @@ import {
 import classnames from "classnames";
 
 const Productos = (props) => {
-  const [activeTab, setActiveTab] = useState(true);
+  const [activeTab, setActiveTab] = useState("1");//este 1 funciona para que siempre este en el tab numero 1 tengamos algo para mostrar
 
   const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
