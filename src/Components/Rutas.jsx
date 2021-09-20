@@ -1,13 +1,36 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export class Rutas extends Component {
-    render() {
-        return (
-            <div>
-           <h2>Manejamos las siguientes Rutas </h2>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <h1>
+          Abatzcuenta con una extensa infraestructura en distribución en el
+          estado con 23 zonas de distribución a nivel estatal.
+        </h1>
+        <h2>Nuestros canales de distribución</h2>
+        <hr />
+        <h2>Estan dedicados a cubir las necesidades de nuestros clientes.</h2>
+        <div>
+          <ul>
+            <ol>
+              <li>Mayoreo</li>
+              <li>Medio mayoreo</li>
+              <li>Cuentas especiales</li>
+              <li>Tradicionales</li>
+              <li>Consumidor final</li>
+            </ol>
+          </ul>
+        </div>
+
+
+
+        <div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1punp5PvCJz4mQUsSn_PaCTAUZy3nxLWR" width="95%" height="480"></iframe>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Rutas
+export default Rutas;
