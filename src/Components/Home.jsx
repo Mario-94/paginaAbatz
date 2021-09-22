@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "reactstrap";
 import "../App.css";
-import { ModalOfertas } from "./ModalOfertas";
+import { ModalOfertas } from "./modalOfertas";
 import tienda from "../images/tienda.jpg";
 
 export class Home extends Component {

@@ -26,7 +26,7 @@ export class Rutas extends Component {
 
 
         <div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1punp5PvCJz4mQUsSn_PaCTAUZy3nxLWR" width="95%" height="480"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1punp5PvCJz4mQUsSn_PaCTAUZy3nxLWR" width="95%" height="480"  title="myMaps"></iframe>
         </div>
       </div>
     );
