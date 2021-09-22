@@ -1,4 +1,4 @@
-import React, { useState,Component } from "react";
+import React, { useState, Component } from "react";
 
 import {
   Button,
@@ -19,7 +19,7 @@ import {
 
 
 
-export  class ModalOfertas extends Component {
+export class ModalOfertas extends Component {
   render() {
     return (
       <div>
@@ -35,15 +35,17 @@ export  class ModalOfertas extends Component {
                     alt="Cardimagecap"
                   />
                   <CardBody>
-                    <CardTitle tag="h5">Card title</CardTitle>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Card subtitle
+                      Precio anterior:
                     </CardSubtitle>
                     <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Nuevo precio:
                     </CardText>
-                    <Mod/>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
                   </CardBody>
                 </Card>
               </Col>
@@ -56,15 +58,17 @@ export  class ModalOfertas extends Component {
                     alt="Card image cap"
                   />
                   <CardBody>
-                    <CardTitle tag="h5">Card title</CardTitle>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Card subtitle
+                      Precio anterior:
                     </CardSubtitle>
                     <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Precio nuevo:
                     </CardText>
-                  <Mod/>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
                   </CardBody>
                 </Card>
               </Col>
@@ -75,9 +79,10 @@ export  class ModalOfertas extends Component {
     );
   }
 }
+// En esta part empezamos con el modal como un componente de funcion <Mod/>
 
 const Mod = (props) => {
-  const { className } = props;
+  const { className, producto, precioAnterior, nuevoPrecio, unidad, imagen } = props;
 
   const [modal, setModal] = useState(false);
 
@@ -88,18 +93,27 @@ const Mod = (props) => {
       <Button color="info" onClick={toggle}>
         Informacion
       </Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
-        <ModalBody>Informacion a recibir</ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            Do Something
-          </Button>
-          <Button color="secondary" onClick={toggle}>
-            Cancel
-          </Button>
-        </ModalFooter>
-      </Modal>
+      <Container>
+        <Modal isOpen={modal} toggle={toggle} className={className}>
+          <Row>
+            <ModalHeader toggle={toggle}>{producto}</ModalHeader>
+            <Col>
+              <ModalBody>{precioAnterior}</ModalBody>
+              <ModalBody>{nuevoPrecio}</ModalBody>
+              <ModalBody>{unidad}</ModalBody>
+            </Col>
+            <Col >
+              {imagen}
+            </Col>
+          </Row>
+          <ModalFooter>
+            
+            <Button color="secondary" onClick={toggle}>
+              Cerrar
+            </Button>
+          </ModalFooter>
+        </Modal>
+      </Container>
     </div>
   );
 };
