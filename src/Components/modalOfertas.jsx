@@ -55,6 +55,213 @@ export class ModalOfertas extends Component {
                     top
                     width="100%"
                     src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
+                    alt="Cardimagecap"
+                  />
+                  <CardBody>
+                    <CardTitle tag="h5">Producto</CardTitle>
+                    <CardText>
+                      Unidad:
+                    </CardText>
+                    <CardSubtitle tag="h6" className="mb-2 text-muted">
+                      Precio anterior:
+                    </CardSubtitle>
+                    <CardText>
+                      Nuevo precio:
+                    </CardText>
+                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs="6">
+                <Card>
+                  <CardImg
+                    top
+                    width="100%"
+                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
                     alt="Card image cap"
                   />
                   <CardBody>

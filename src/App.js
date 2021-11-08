@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css'
 import { useState } from "react";
 import logo from "./images/Icono.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -22,7 +22,7 @@ function App() {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="App">
+    <div>
       <Router>
         <Navbar className="navIndex" light expand="md" id="header">
           <Link className="navIndex" to="/">
@@ -61,8 +61,9 @@ function App() {
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-
+          <div className="espacio">
         <Switch>
+          
           <Route exact path="/">
             <Home />
           </Route>
@@ -85,8 +86,9 @@ function App() {
             <Contacto />
           </Route>
         </Switch>
+        </div>
       </Router>
-      <br />
+      
       <Footer />
     </div>
   );
