@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Container} from 'reactstrap'
 
 export class Rutas extends Component {
   render() {
@@ -25,9 +26,9 @@ export class Rutas extends Component {
 
 
 
-        <div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1punp5PvCJz4mQUsSn_PaCTAUZy3nxLWR" width="95%" height="480"  title="myMaps"></iframe>
-        </div>
+        <Container>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1punp5PvCJz4mQUsSn_PaCTAUZy3nxLWR" width="100%" height="480"  title="myMaps"></iframe>
+        </Container>
       </div>
     );
   }

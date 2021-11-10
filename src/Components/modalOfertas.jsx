@@ -1,326 +1,61 @@
-import React, { useState, Component } from "react";
-
+import React, { useState } from "react";
+// https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/
 import {
   Button,
   Modal,
   ModalHeader,
   ModalBody,
   ModalFooter,
-  Card,
   CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Col,
-  Row,
   Container,
+  Row,
+  Col,
 } from "reactstrap";
 
-
-
-export class ModalOfertas extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <Container>
-            <Row>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Cardimagecap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Nuevo precio:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs="6">
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src="https://cdn7.kiwilimon.com//brightcove/6926/6926.jpg/"
-                    alt="Card image cap"
-                  />
-                  <CardBody>
-                    <CardTitle tag="h5">Producto</CardTitle>
-                    <CardText>
-                      Unidad:
-                    </CardText>
-                    <CardSubtitle tag="h6" className="mb-2 text-muted">
-                      Precio anterior:
-                    </CardSubtitle>
-                    <CardText>
-                      Precio nuevo:
-                    </CardText>
-                    <Mod producto={"Producto"} precioAnterior={"Precio anterior"} nuevoPrecio={"Nuevo precio"} unidad={"Unidad"} imagen={"imagen"} />
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </div>
-    );
-  }
-}
-// En esta part empezamos con el modal como un componente de funcion <Mod/>
-
-const Mod = (props) => {
-  const { className, producto, precioAnterior, nuevoPrecio, unidad, imagen } = props;
-
+const ModalOfertas = (props) => {
+  const { descripcion, producto, precioAnterior, precioNuevo, unidad, img } =
+    props;
+  // Modal open state
+  //se utiliza para cambiar el modal si esta abierto o cerrado
   const [modal, setModal] = useState(false);
 
+  // Toggle for Modal
   const toggle = () => setModal(!modal);
 
   return (
     <div>
-      <Button color="info" onClick={toggle}>
-        Informacion
+      {/* Button que aparece en la card  */}
+      <Button color="danger" onClick={toggle}>
+        Información
       </Button>
-      <Container>
-        <Modal isOpen={modal} toggle={toggle} className={className}>
-          <Row>
-            <ModalHeader toggle={toggle}>{producto}</ModalHeader>
+      {/* En esta parte inicial el modal */}
+      <Modal isOpen={modal} toggle={toggle} size="lg" centered>
+        <ModalHeader toggle={toggle}>{producto}</ModalHeader>
+        {/* Este container lo utilizo para darle el estilo a el modal donde aparecera la imagen del producto junto con toda su descripcion */}
+        <Container>
+          {/* Con este Row le indico que este dividido para dos filas y las Col que agrege respetaran el tamaño de las filas */}
+          <Row xs="2">
             <Col>
-              <ModalBody>{precioAnterior}</ModalBody>
-              <ModalBody>{nuevoPrecio}</ModalBody>
-              <ModalBody>{unidad}</ModalBody>
+              <CardImg alt="Card image cap" src={img} top width="10%" />
             </Col>
-            <Col >
-              {imagen}
+            <Col>
+            <ModalBody>{descripcion}</ModalBody>
+            </Col>
+            {/* ejemplo */}
+           <Col>
+            <ModalBody>Estas son de ejemplo</ModalBody>
+            </Col>
+            <Col>
+            <ModalBody>Estas son de ejemplo</ModalBody>
             </Col>
           </Row>
           <ModalFooter>
-            
-            <Button color="secondary" onClick={toggle}>
-              Cerrar
-            </Button>
+            <Button onClick={toggle}>Cerrar</Button>
           </ModalFooter>
-        </Modal>
-      </Container>
+        </Container>
+      </Modal>
     </div>
   );
 };
+
+export default ModalOfertas;
