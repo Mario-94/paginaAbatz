@@ -6,72 +6,67 @@ import {
   CardTitle,
   CardSubtitle,
   CardText,
+  Container, Row, Col
 
 } from "reactstrap";
 import ModalOfertas from "./ModalOfertas";
+import axios from 'axios';
+import React from 'react'
 
-const CardImage= (props)=>{
-const { descripcion="Descripcion del producto", img="https://picsum.photos/318/180",titulo="Pepsi"}=props
+export default class CardImage extends React.Component{
   
-    return (
-      <div>
-        <CardGroup>
+     state={
+        datos:[],
+        img:"https://picsum.photos/318/180"
+    }
+    componentDidMount() {
+    axios.get('http://localhost:5000/ofertas')
+    .then(res => {
+      const datos = res.data;
+      this.setState({ datos })
+    }).catch(error =>{
+      console.error(error)
+    })
+   }
+    render() {
+        return (
+            <div>
+
+           <Container> 
+           <Row xs="3">
+            {this.state.datos!==[] 
+            ?
+
+           this.state.datos.map((dato,index)=>
+         <Col>
           <Card>
             <CardImg
               alt="Card image cap"
-              src={img}
+              src={this.state.img}
               top
               width="100%"
             />
             <CardBody>
-              <CardTitle tag="h5">{titulo}</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Descripcion del producto
+              <CardTitle tag="h5"> {dato.Descripcion1}</CardTitle>
+             { /*con toFixed(2) controlo el punto decimal de dos carecteres*/} 
+              <CardTitle tag="h5"> ${(dato.CostoBase).toFixed(2)}</CardTitle>
+              <CardSubtitle className="mb-2 text-muted" tag="h7">
+          Precio por:{dato.UnidadVenta}
+
               </CardSubtitle>
               <CardText>
-               {descripcion}
+              
               </CardText>
-              <ModalOfertas descripcion={descripcion} producto={titulo} img={img}/>
+              <ModalOfertas descripcion={dato.Descripcion1} producto={'titulo'} img={this.state.img}/>
             </CardBody>
           </Card>
-          <Card>
-            <CardImg
-              alt="Card image cap"
-              src={img}
-              top
-              width="100%"
-            />
-            <CardBody>
-              <CardTitle tag="h5">{titulo}</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Descripcion del producto
-              </CardSubtitle>
-              <CardText>
-                {descripcion}
-              </CardText>
-              <ModalOfertas descripcion={descripcion} producto={titulo} img={img} />
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              alt="Card image cap"
-              src={img}
-              top
-              width="100%"
-            />
-            <CardBody>
-              <CardTitle tag="h5">{titulo}</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Descripcion del producto
-              </CardSubtitle>
-              <CardText>
-                {descripcion}
-              </CardText>
-              <ModalOfertas descripcion={descripcion} producto={titulo} img={img}/>
-            </CardBody>
-          </Card>
-        </CardGroup>
-      </div>
-    );
+          </Col>           
+           )
+          
+            : console.error()}
+            </Row>
+      </Container>
+            </div>
+        )
   }
-export default CardImage;
+}

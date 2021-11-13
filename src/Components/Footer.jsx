@@ -10,7 +10,7 @@ export class Footer extends Component {
         <Container className="footer" fluid>
           <Row xs="3">
             <Col xs="2" >
-              <p>Redes sociales</p>
+            <p> Redes sociales</p>
               <Nav>
                 <NavLink
                   active

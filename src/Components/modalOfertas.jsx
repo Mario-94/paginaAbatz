@@ -30,7 +30,7 @@ const ModalOfertas = (props) => {
       </Button>
       {/* En esta parte inicial el modal */}
       <Modal isOpen={modal} toggle={toggle} size="lg" centered>
-        <ModalHeader toggle={toggle}>{producto}</ModalHeader>
+        <ModalHeader toggle={toggle}>{descripcion}</ModalHeader>
         {/* Este container lo utilizo para darle el estilo a el modal donde aparecera la imagen del producto junto con toda su descripcion */}
         <Container>
           {/* Con este Row le indico que este dividido para dos filas y las Col que agrege respetaran el tamaño de las filas */}

@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Col, Row, Container, Spinner } from "reactstrap";
 import "../App.css";
-//import { PruebaConexion } from "./pruebaConexion";
 import tienda from "../images/tienda.jpg";
 import Paginacion from "./Paginacion";
 import CardImage from "./CardImage";
-
 export class Home extends Component {
   // dejamos el spinner para ahora que pintemos las ofertas en lo que obtenemos respuesta del servidor, se dejara como muestra
   constructor(props) {
@@ -22,7 +20,7 @@ export class Home extends Component {
           <Spinner color="danger" type="grow"></Spinner>
         ) : (
           <Container>
-            {/* <PruebaConexion /> */}
+        
             <Row xs="2">
               <Col>
                 <br />
@@ -45,7 +43,7 @@ export class Home extends Component {
               </Col>
             </Row>
             <h1 className="espacio">Ofertas de la semana</h1>
-            <CardImage/>           
+         <CardImage/>
           </Container>
         )}
       </div>
