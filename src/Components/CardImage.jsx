@@ -1,12 +1,13 @@
 import {
   Card,
-  CardGroup,
   CardImg,
   CardBody,
   CardTitle,
   CardSubtitle,
   CardText,
-  Container, Row, Col
+  Container,
+  Row,
+  Col
 
 } from "reactstrap";
 import ModalOfertas from "./ModalOfertas";
@@ -23,6 +24,7 @@ export default class CardImage extends React.Component{
     axios.get('http://localhost:5000/ofertas')
     .then(res => {
       const datos = res.data;
+       // {console.log((datos).length)}
       this.setState({ datos })
     }).catch(error =>{
       console.error(error)
@@ -38,8 +40,9 @@ export default class CardImage extends React.Component{
             ?
 
            this.state.datos.map((dato,index)=>
-         <Col>
-          <Card>
+         <Col key={index}>
+        
+          <Card >
             <CardImg
               alt="Card image cap"
               src={this.state.img}
@@ -50,7 +53,7 @@ export default class CardImage extends React.Component{
               <CardTitle tag="h5"> {dato.Descripcion1}</CardTitle>
              { /*con toFixed(2) controlo el punto decimal de dos carecteres*/} 
               <CardTitle tag="h5"> ${(dato.CostoBase).toFixed(2)}</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h7">
+              <CardSubtitle className="mb-2 text-muted" tag="h6">
           Precio por:{dato.UnidadVenta}
 
               </CardSubtitle>
