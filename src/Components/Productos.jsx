@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../App.css";
 import {
   TabContent,
   CardSubtitle,
@@ -27,63 +26,7 @@ const Productos = (props) => {
 
   return (
     <div>
-      <div>
-        {/* En esta seccion estan las tarjetas de las lineas que maneja la abarrotera  */}
-        <Container>
-          <Row>
-            <h1>Marcas que manejamos </h1>
-            <Col>
-              <img
-                className="marcas"
-                src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
-                alt="Card img cap"
-              />
-            </Col>
-            <Col>
-              <img
-                className="marcas"
-                src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
-                alt="Card img cap"
-              />
-            </Col>
-            <Col>
-              <img
-                className="marcas"
-                src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
-                alt="Card img cap"
-              />
-            </Col>
-            <Col>
-              <img
-                className="marcas"
-                src="https://assets.entrepreneur.com/content/3x2/2000/20190723142420-coca-cola.jpeg?width=600&crop=16:9"
-                alt="Card img cap"
-              />
-            </Col>
-            <Col>
-              <img
-                className="marcas"
-                src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
-                alt="Card img cap"
-              />
-            </Col>
-            <Col>
-              <img
-                className="marcas"
-                src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
-                alt="Card img cap"
-              />
-            </Col>
-            <Col>
-              <img
-                className="marcas"
-                src="https://grupobimbo-com-custom01-assets.s3.amazonaws.com/s3fs-public/grupo-bimbo-millward-brown_0.jpg"
-                alt="Card img cap"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+     
       {/* empieza la seccion de productos por categoria el primer h1 es el mensaje y lo demas son las card delos productos conde estara la descripcion y el boton se esta pensando en un nuevo modulo o un modal */}
       <div>
         <h1>Categoria de productos</h1>

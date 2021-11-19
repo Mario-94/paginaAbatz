@@ -7,14 +7,28 @@ import {
   Form,
   FormGroup,
   Input,
+  Spinner,
 } from "reactstrap";
-import atencion from '../images/atencionCliente.jpg'
+import atencion from "../images/atencionCliente.jpg";
 
 export class Contacto extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isLoading: true };
+  }
+  componentDidMount() {
+    this.setState({
+      isLoading: false,
+    });
+  }
   render() {
-    return (
-      <Container >
-        <img src={atencion} width="100%" alt="mapaContacto"/>
+    // con esta linea controlaremos la carga del componente, permitiendo cargar el componente, de tal manera que en caso de alguna falla esta mostrara como que esta cargando
+    return this.state.isLoading ? (
+      <Spinner color="danger"></Spinner>
+    ) : (
+      <div>
+      <Container>
+        <img src={atencion} width="100%" alt="mapaContacto" />
         {/* en esta parte es el mensaje  */}
         <h1>Dejanos tu mensaje </h1>
         <hr width="100%" />
@@ -71,6 +85,7 @@ export class Contacto extends Component {
           </Row>
         </Form>
       </Container>
+      </div>
     );
   }
 }
