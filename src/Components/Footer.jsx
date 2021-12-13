@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../App.css";
-import { Row, Col, Container, NavLink, Nav } from "reactstrap";
-import face from "../images/face.svg";
+import React, { Component } from 'react';
+import '../App.css';
+import { Row, Col, Container, NavLink, Nav } from 'reactstrap';
+import face from '../images/face.svg';
 
 export class Footer extends Component {
   render() {
@@ -9,8 +9,8 @@ export class Footer extends Component {
       <div>
         <Container className="footer" fluid>
           <Row xs="3">
-            <Col xs="2" >
-            <p> Redes sociales</p>
+            <Col xs="2">
+              <p> Redes sociales</p>
               <Nav>
                 <NavLink
                   active
@@ -20,12 +20,12 @@ export class Footer extends Component {
                 </NavLink>
               </Nav>
             </Col>
-            <Col >
+            <Col>
               <p>ABARROTERA DE PATZCUARO SA DE CV.</p>
               LIB. GRAL. IG. #250 COL CENTRO PATZCUARO, MICHOACAN CP: 61600
             </Col>
             {/* con este controlo el de contacto */}
-            <Col xs="6" >
+            <Col xs="6">
               <p>Contactos:</p>
 
               <p>TEL: 434-342-26-48</p>
@@ -33,9 +33,8 @@ export class Footer extends Component {
               <p>TEL: 434-596-84-51</p>
 
               <p className="letraFooter">
-                E-mail: abarrotera_patzcuaro@hotmail.com 
-                
-                abatzcxc@gmail.com
+                E-mail: abarrotera_patzcuaro@hotmail.com abatzcxc@gmail.com
+                contacto@abattz.com
               </p>
             </Col>
           </Row>
