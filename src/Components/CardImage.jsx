@@ -19,6 +19,7 @@ export default class CardImage extends React.Component {
 
   state = {
     datos: [],
+    bandera:false,
     img: "https://picsum.photos/318/180"
   }
   componentDidMount() {
@@ -26,7 +27,8 @@ export default class CardImage extends React.Component {
       .then(res => {
         const datos = res.data;
         // {console.log((datos).length)}
-        this.setState({ datos })
+        this.setState({ datos, bandera:true})
+
       }).catch(error => {
         console.log("error 500")
       })
@@ -36,7 +38,7 @@ export default class CardImage extends React.Component {
       <div>
         <Container >
           <Row xs="3">
-            {!this.state.datos
+            {this.state.bandera=== true
               ?
               this.state.datos.map((dato, index) =>
                 <Col key={index}>
