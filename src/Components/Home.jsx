@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, Container, Spinner } from "reactstrap";
+import { Col, Row, Container, Spinner, NavLink,Nav,NavItem,TabPane,TabContent } from "reactstrap";
 import "../App.css";
 import tienda from "../images/tienda.jpg";
 import Paginacion from "./Paginacion";
@@ -43,9 +43,29 @@ export class Home extends Component {
               </Col>
             </Row>
             <h1 className="espacio">Ofertas de la semana</h1>
+            {/* <Nav>
+              <NavItem>
+                <NavLink className="active"
+                >
+Super
+                </NavLink>
+              </NavItem>
+            </Nav> */}
          <CardImage/>
           </Container>
         )}
+        {/* en eesta parte pondremos lo que son la funcion de las pestañas */}
+          {/* <TabContent activeTab="1">
+    <TabPane tabId="1">
+      <Row>
+        <Col sm="12">
+          <h4>
+            Tab 1 Contents
+          </h4>
+        </Col>
+      </Row>
+    </TabPane>
+    </TabContent> */}
       </div>
     );
   }
