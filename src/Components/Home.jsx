@@ -43,19 +43,19 @@ export class Home extends Component {
               </Col>
             </Row>
             <h1 className="espacio">Ofertas de la semana</h1>
-            <Nav>
+            {/* <Nav>
               <NavItem>
                 <NavLink className="active"
                 >
 Super
                 </NavLink>
               </NavItem>
-            </Nav>
+            </Nav> */}
          <CardImage/>
           </Container>
         )}
         {/* en eesta parte pondremos lo que son la funcion de las pestañas */}
-          <TabContent activeTab="1">
+          {/* <TabContent activeTab="1">
     <TabPane tabId="1">
       <Row>
         <Col sm="12">
@@ -65,7 +65,7 @@ Super
         </Col>
       </Row>
     </TabPane>
-    </TabContent>
+    </TabContent> */}
       </div>
     );
   }

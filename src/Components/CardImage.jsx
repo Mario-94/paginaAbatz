@@ -22,15 +22,21 @@ export default class CardImage extends React.Component {
     bandera:false,
     img: "https://picsum.photos/318/180"
   }
+  _valorReal(precio,porcentaje){
+  
+    const resultado=precio-((precio*porcentaje)/100)
+    return resultado.toFixed(2);
+
+  }
   componentDidMount() {
-    axios.get('http://localhost:5000/ofertas')
+    axios.get('http://localhost:5000/ofertasAlmacen')
       .then(res => {
         const datos = res.data;
-        // {console.log((datos).length)}
+      console.log((datos).length)
         this.setState({ datos, bandera:true})
 
-      }).catch(error => {
-        console.log("error 500")
+      }).catch(e => {
+        console.log("Revisar su conexion", e)
       })
   }
   render() {
@@ -52,9 +58,9 @@ export default class CardImage extends React.Component {
                     <CardBody>
                       <CardTitle tag="h5"> {dato.Descripcion1}</CardTitle>
                       { /*con toFixed(2) controlo el punto decimal de dos carecteres*/}
-                      <CardTitle tag="h5"> ${(dato.CostoBase).toFixed(2)}</CardTitle>
+                      <CardTitle tag="h5"> ${this._valorReal(dato.Precio,dato.Porcentaje)}</CardTitle>
                       <CardSubtitle className="mb-2 text-muted" tag="h6">
-                        Precio por:{dato.UnidadVenta}
+                        Precio por:{dato.Unidad}
 
                       </CardSubtitle>
                       <CardText>
