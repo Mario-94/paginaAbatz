@@ -1,7 +1,7 @@
-
 .navIndex {
-  background-color: #B30033 ;
-  text-decoration: none; /* Me ayuda a que no se vea el link del boton navbar */
+  background-color: #B30033;
+  text-decoration: none;
+  /* Me ayuda a que no se vea el link del boton navbar */
   color: white;
 }
 
@@ -21,26 +21,79 @@
   width: 100%;
   min-height: 18vh;
   /* Solo para probar cómo se ve */
-  background:#E54217;
+  background: #E54217;
 }
+
 /* estilo de marcas que maneja la abarrotera en el modulo productos*/
-.marcas{
-   max-width: 100%;
-	height: 100%;  
+.marcas {
+  max-width: 100%;
+  height: 100%;
 
 }
-.Paginacion{
+
+.Paginacion {
   display: flex;
   justify-content: center;
 }
 
-.espacio{
- margin: 6px;
+.espacio {
+  margin: 6px;
 }
 
-.imagenes{
-  
-width: 80px !important;
+.imagenes {
+
+  width: 2rem;
+  height: 12rem;
 
 
+}
+/* paginacion */
+
+/* ul.pagination {
+  background-color: whitesmoke;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration:double;
+  border-radius: 5px;
+}
+
+.pagination li a {
+  background-color:  #E54217;
+  color: white;
+  border-radius: 15px;
+}
+
+.pagination li a:hover{background-color: #ddd;} */
+
+
+.pagination{
+  background-color: whitesmoke;
+  display: inline-table;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.pagination a{
+  width: 100px;
+  height: 80px;
+  line-height: 80px;
+  text-align:center;
+  color: brown;
+  font-size: 19px;
+  font-weight: 700;
+  transition: .2s linear;
+}
+.pagination  li a:hover{
+background-color: coral;
+color: white;
 }
