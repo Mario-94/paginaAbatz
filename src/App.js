@@ -9,6 +9,7 @@ import Rutas from "./Components/Rutas";
 import Nosotros from "./Components/Nosotros";
 import Contacto from "./Components/Contacto";
 import Footer from "./Components/Footer";
+import Paginacion from './Components/Paginacion';
 import {
   Collapse,
   Navbar,
@@ -55,6 +56,9 @@ function App() {
               <Link className="navIndex" to="/contacto">
                 Contacto
               </Link>
+              <Link className="navIndex" to="/pruebas">
+               Pruebas
+              </Link>
             </Nav>
           </Collapse>
         </Navbar>
@@ -85,6 +89,9 @@ function App() {
           <Route path="/contacto">
             <Contacto />
           </Route>
+        <Route>
+          <Paginacion/>
+        </Route>
         </Switch>
         </div>
       </Router>
