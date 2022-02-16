@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Row, Col, Container, NavLink, Nav } from 'reactstrap';
-import face from '../images/face.svg';
 
 export class Footer extends Component {
   render() {
@@ -16,7 +15,7 @@ export class Footer extends Component {
                   active
                   href="https://www.facebook.com/ABATZ-1090409927663523/?hc_ref=ARQPgDU9ZQqdSa8fzmozuS4VHwAYuWWKg05GDc6CgWh6UgqTlpO8mFXsgnHJ2_kJYEs&fref=nf&__tn__=kC-R"
                 >
-                  <img width="40" src={face} alt="logo" />
+                  <img width="40"  alt="logo" />
                 </NavLink>
               </Nav>
             </Col>

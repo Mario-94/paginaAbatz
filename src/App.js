@@ -1,5 +1,4 @@
 import './App.css'
-import { useState } from "react";
 import logo from "./images/Icono.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
@@ -9,66 +8,89 @@ import Rutas from "./Components/Rutas";
 import Nosotros from "./Components/Nosotros";
 import Contacto from "./Components/Contacto";
 import Footer from "./Components/Footer";
-import Paginacion from './Components/Paginacion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStore, faBasketShopping, faBuildingColumns, faRoute, faAddressCard, faHeadset, faBars } from '@fortawesome/free-solid-svg-icons'
+
+// import Paginacion from './Components/Paginacion';
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
- 
+
 } from "reactstrap";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
       <Router>
-        <Navbar className="navIndex" light expand="md" id="header">
-          <Link className="navIndex" to="/">
-            <img width="100" src={logo} alt="logo" />
-          </Link>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <Link className="navIndex" to="/">
-                Inicio
-              </Link>
-              {/* Este     &nbsp;  lo utilizo para separar momentaneamente los nav */}
-              &nbsp;
-              <Link className="navIndex" to="/productos">
-                Productos
-              </Link>
-              &nbsp;
-              <Link className="navIndex" to="/sucursales">
-                Sucursales
-              </Link>
-              &nbsp;
-              <Link className="navIndex" to="/rutas">
-                Rutas
-              </Link>
-              &nbsp;
-              <Link className="navIndex" to="/nosotros">
-                Nosotros
-              </Link>
-              &nbsp;
-              <Link className="navIndex" to="/contacto">
-                Contacto
-              </Link>
-              <Link className="navIndex" to="/pruebas">
-               Pruebas
-              </Link>
-            </Nav>
-          </Collapse>
-        </Navbar>
+        {/* navINdex funcionara como el navbar  */}
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-          <div className="espacio">
+        {/* este lo tuilizare como si fuera el menu de hamburguesa */}
+        <header>
+          <div className='icon_menu'>
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+        </header>
+
+        {/* <NavbarToggler onClick={toggle} /> */}
+        {/* <Collapse isOpen={isOpen} navbar> */}
+        <div className='menu_side'>
+          <div class="name_page">
+            <img className='logo' src={logo} alt="logo" title='Abatz' />
+            
+            <h4>Abatz</h4>
+          </div>
+          <div className='option_menu'>
+            <a className='selected'>
+              <Link className='option' to="/">
+                {/* agregar un icono de font awesome */}
+                <FontAwesomeIcon icon={faStore} title='Abatz' />
+                <h4> Inicio</h4>
+              </Link>
+            </a>
+            <a>
+              <Link className='option' to="/productos">
+                <FontAwesomeIcon icon={faBasketShopping} title='Productos' />
+                <h4> Productos </h4>
+              </Link>
+            </a>
+            <a>
+              <Link className='option' to="/sucursales">
+                <FontAwesomeIcon icon={faBuildingColumns} title='Sucursales' />
+                <h4> Sucursales</h4>
+              </Link>
+            </a>
+
+            <a>
+              <Link className='option' to="/rutas">
+                <FontAwesomeIcon icon={faRoute} title='Rutas' />
+                <h4>Rutas</h4>
+              </Link>
+            </a>
+            <a>
+              <Link className='option' to="/nosotros">
+                <FontAwesomeIcon icon={faAddressCard} title='Acerca de nosotros' />
+                <h4>Nosotros</h4>
+              </Link>
+            </a>
+            <a>
+              <Link className='option' to="/contacto">
+                <FontAwesomeIcon icon={faHeadset} title='Contacto' />
+                <h4>Contacto</h4>
+              </Link>
+            </a>
+          </div>
+        </div>
+
+        {/* Se comento la linea de abajo por que no solo se utilizara para comprobar nuevos componentes */}
+        {/* <Link  to="/pruebas">
+               Pruebas
+              </Link> */}
+
+        {/* </Collapse> */}
+
+        <main>
         <Switch>
-          
+
           <Route exact path="/">
+           
             <Home />
           </Route>
           <Route exact path="/">
@@ -89,14 +111,21 @@ function App() {
           <Route path="/contacto">
             <Contacto />
           </Route>
-        <Route>
+          {/* Esta solo es de pruebas */}
+          {/* <Route>
           <Paginacion/>
-        </Route>
+        </Route> */}
         </Switch>
-        </div>
+        </main>
       </Router>
       
-      <Footer />
+
+{/*      
+      <footer>
+
+        <Footer />
+      </footer> */}
+
     </div>
   );
 }
