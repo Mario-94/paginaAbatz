@@ -12,9 +12,8 @@
   margin-left: 80px;
   margin-top: 80px;
   transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-
 }
-main{
+main {
   margin-top: 20px;
   padding: 80px;
 }
@@ -130,16 +129,20 @@ a.selected {
   top: 10%;
   left: -30px;
 }
-/* Esta parte es para controlar lo que esta al lado del navBar par que sea responsivo */
-/* .container {
-  margin-top: 80px; /* controlamos la distancia ente la barra superior y el texto que vendra despues */
-  /* width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(10px); /* Esta es la parte que se encarda de separar el contenido de la barra lateral izquierda */
+/* *****************Empezamos el acomodo de las card imagenes+*********** */
+.container {
+  width: 30%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  background-color: #d22944;
+  display: grid;
+ 
+}
+.content_card {
 
-  /* margin-left: 80px;
-  margin-top: 80px;
-  transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-} */ 
+  
+}
+.card_img {
+
+}

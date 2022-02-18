@@ -8,6 +8,7 @@ import Rutas from "./Components/Rutas";
 import Nosotros from "./Components/Nosotros";
 import Contacto from "./Components/Contacto";
 import Footer from "./Components/Footer";
+import Paginacion from './Components/Paginacion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStore, faBasketShopping, faBuildingColumns, faRoute, faAddressCard, faHeadset, faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -45,12 +46,13 @@ function App() {
                 <h4> Inicio</h4>
               </Link>
             </a>
-            <a>
+            {/* se comento la linea de abajo por qu por lo pronto aun no presentremos las lineas que maneja la abarrotera, por que hay que preguntar bien como seran las lineas */}
+            {/* <a>
               <Link className='option' to="/productos">
                 <FontAwesomeIcon icon={faBasketShopping} title='Productos' />
                 <h4> Productos </h4>
               </Link>
-            </a>
+            </a> */}
             <a>
               <Link className='option' to="/sucursales">
                 <FontAwesomeIcon icon={faBuildingColumns} title='Sucursales' />
@@ -96,9 +98,10 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/productos">
+          {/* Se comenta esta url o componente por que aun no se maneja bien las lineas de los productos */}
+          {/* <Route path="/productos">
             <Productos />
-          </Route>
+          </Route> */}
           <Route path="/sucursales">
             <Sucursal />
           </Route>
@@ -115,6 +118,9 @@ function App() {
           {/* <Route>
           <Paginacion/>
         </Route> */}
+        <Route path="/paginacion">
+        <Paginacion />
+        </Route>
         </Switch>
         </main>
       </Router>

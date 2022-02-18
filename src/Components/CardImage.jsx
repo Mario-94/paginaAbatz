@@ -1,20 +1,9 @@
-import {
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  Row,
-  Col,
-  CardGroup,
-  Spinner,
-} from "reactstrap";
+import { Spinner } from "reactstrap";
 // import ModalOfertas from "./ModalOfertas"; por el momento ya no pondremos el modal, por que es un paso mas que estaria haciendo, ya en caso de agregar el carrito de compras pues hay si se haria esta parte
 import axios from "axios";
 import React from "react";
 import "../App.css";
-export default class CardImage extends React.Component {
+export class CardImage extends React.Component {
   state = {
     currentPage: 1,
     todosPerPage: 21,
@@ -55,31 +44,24 @@ export default class CardImage extends React.Component {
     const currentTodos = items.slice(start, end);
     const renderTodos = currentTodos.map((dato, index) => {
       return (
-        <Row xs="4" key={index}>
-          <Col>
-            <CardGroup>
-              <Card>
-                <CardImg
-                  alt="Card image cap"
-                  src={`https://abattz.com/img/AppAbatz/${dato.Articulo}.jpg`}
-                  className="imagenes"
-                />
-                <CardBody>
-                  <CardTitle tag="h5"> {dato.Descripcion1}</CardTitle>
-                  {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
-                  <CardTitle tag="h5">
-                    {" "}
-                    ${this._valorReal(dato.Precio, dato.Porcentaje)}
-                  </CardTitle>
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
-                    Precio por:{dato.Unidad}
-                  </CardSubtitle>
-                  <CardText></CardText>
-                </CardBody>
-              </Card>
-            </CardGroup>
-          </Col>
-        </Row>
+        <div className="container" key={index}>
+          {/* Esta es la imagen */}
+
+          <div className="content_card">
+            <img
+              className="card_img"
+              alt="Producto"
+              src={`https://abattz.com/img/AppAbatz/${dato.Articulo}.jpg`}
+              title="Articulo"
+            />
+            
+              <h1> {dato.Descripcion1}</h1>
+              {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
+              <h2> ${this._valorReal(dato.Precio, dato.Porcentaje)}</h2>
+              <h1>Precio por:{dato.Unidad}</h1>
+            
+          </div>
+        </div>
       );
       // return (<li key={index}>{todo.Articulo}</li>);
     });
@@ -91,7 +73,7 @@ export default class CardImage extends React.Component {
     // Este es el encargado de mostrar los items a mostrar
     const renderPageNumbers = pageNumbers.map((number) => {
       return (
-        <ul key={number} className="pagination">
+        <ul key={number}>
           <li>
             {/* el id lo utilizo para cambiar entre hojas
              */}
@@ -106,8 +88,8 @@ export default class CardImage extends React.Component {
       <div>
         {this.state.bandera === true ? (
           <div>
-            {renderTodos}
-            <div className="prueba">{renderPageNumbers}</div>
+            <div>{renderTodos}</div>
+            <div>{renderPageNumbers}</div>
           </div>
         ) : (
           <Spinner color="danger" type="border">
@@ -118,3 +100,4 @@ export default class CardImage extends React.Component {
     );
   }
 }
+export default CardImage;
