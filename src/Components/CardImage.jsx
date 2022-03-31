@@ -63,7 +63,7 @@ export class CardImage extends React.Component {
           </div>
         </div>
       );
-      // return (<li key={index}>{todo.Articulo}</li>);
+      // return (<l key={index}>{todo.Articulo}</li>);
     });
     //logica para mostrar el numero de paginas
     const pageNumbers = [];
