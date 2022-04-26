@@ -9,9 +9,10 @@ import Contacto from "./Components/Contacto"
 import Footer from "./Components/Footer";
 import Paginacion from './Components/Paginacion';
 import NavBar from './Components/NavBar'
+
 function App() {
   return (
-    <div className='container'>
+   
       <Router>
         <NavBar />
         <Switch>
@@ -25,28 +26,28 @@ function App() {
           {/* <Route path="/productos">
   <Productos />
 </Route> */}
-          <Route path="/sucursales">
+          <Route exact path="/sucursales">
             <Sucursal />
           </Route>
           <Route exact path="/rutas">
             <Rutas />
           </Route>
-          <Route path="/nosotros">
+          <Route exact path="/nosotros">
             <Nosotros />
           </Route>
-          <Route path="/contacto">
+          <Route exactpath="/contacto">
             <Contacto />
           </Route>
           {/* Esta solo es de pruebas */}
           {/* <Route>
 <Paginacion/>
 </Route> */}
-          <Route path="/paginacion">
+          <Route exact path="/paginacion">
             <Paginacion />
           </Route>
         </Switch>
       </Router>
-    </div>
+   
   );
 }
 

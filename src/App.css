@@ -1,8 +1,117 @@
-*{  margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #eee;
+  font-family: "Courier New", Courier, monospace;
+}
+/* Toda esta parte es de NavBar */
+.navBar-container {
+  height: 30vmin;
+  text-transform: uppercase;
+  /* background-color: #f23838; */
+  background-color: #f23838;
+  padding: 1vmin;
+  position: sticky;
+  top: 0;
+  font-size: 4vmin;
+  margin-bottom: 10px;
+}
+/* Con este mantenjo el navegador comprimido hasta precionar el logo es que se expande el menu */
+.navigation-menu.expanded {
+  display: block;
+}
+.navBarItems a {
+  text-decoration: none;
+  color: #eee;
+}
+
+/* De esta manera expande el menu  */
+.navigation-menu {
+  flex-direction: column;
+  
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: calc(100vh- 60px);
+  background-color: #f23838;
+  /* border-top: 1px solid rgb(224, 96, 96); */
+  display: none;
+}
+/* Controlamos el tamaño de logo */
+.nav-logo-abatz {
+  /* con cursor pointer agregamos la mano al efecto */
+  max-width: 20%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.logo {
+  max-width: 100%;
+}
+
+.tituloAbatz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  font-size: 4vmin;
+}
+
+.navBarItems {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin: 5px;
+  font-size: 4vmin;
+}
+/* Aqui finaliza el navBar  */
+
+/* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
+@media screen and (min-width: 520px) {
+
+  /* Nav Bar de la pagina  */
+  .hamburger {
+    display: none;
+  }
+  .navBar-container {
+    display: flex;
+    flex-direction: column;
+    background-color:#f23838;
+    padding: 1vmin;
+    position: sticky;
+    top: 0;
+    font-size: 4vmin;
+    
+  }
+  .navigation-menu{
+  display: flex;
+  }
+  .nav-logo-abatz{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  .logo{
+    width: 100px;
+  }
+  .navBarItems a{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 5px;
+    font-size: 4vmin;
+  }
+  /* Finaliza el nav Bar */
   
 }
