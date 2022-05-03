@@ -10,6 +10,7 @@ body {
   margin: 0;
   color: #eee;
   font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
 }
 /* Toda esta parte es de NavBar */
 .navBar-container {
@@ -83,18 +84,22 @@ body {
   justify-content: center;
 }
 .home-item {
-  max-width: 100%;
+  padding: 10px;
 }
-.mapa {
-  width: 100%;
-  height: 260px;
-  margin-left: auto;
-  margin-right: auto;
+.info-home {
+  background-color: #ececec;
+  border-radius: 15px 0 0 15px;
 }
 
 .info-home h3,
 h2 {
   text-align: center;
+}
+.ofertasSemana {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #f23838;
+  border-radius: 15px 0 0 15px;
 }
 .info-home img {
   margin-left: auto;
@@ -103,6 +108,62 @@ h2 {
 }
 
 /* Fin de la parte de home */
+/* parte de los items de las imagenes de los productos que estan en oferta */
+/* Este es el container-Card de home*/
+.container-Card {
+  grid-column: 1/-1;
+  /* background-color: #f23838; */
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+/* Este hace referencia al componente CardImage */
+.container-CardItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* .container-CardItems img {
+ 
+  width: 50%;
+  height: 50%;
+} */
+
+.item-card {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 0 0 15px 15px;
+  margin: 2px;
+}
+.item-card img {
+  width: 80%;
+  height: 50%;
+  object-fit: contain;
+  border: 1px solid #ecab0f;
+}
+
+.card-info-item {
+  height: 50%;
+  margin: 0;
+  background-color: orange;
+  border-radius: 0 0 15px 15px;
+}
+.card-info-item p:last-child {
+  background-color: red;
+}
+.card-description {
+  font-size: 12px;
+}
+
+.precio-item {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* fin parte de los items de las imagenes de los productos que estan en oferta */
 
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
 @media screen and (min-width: 520px) {
@@ -144,7 +205,6 @@ h2 {
   .home-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
-    
   }
   .home-item {
     width: 100%;
@@ -152,10 +212,9 @@ h2 {
   }
   .mapa iframe {
     width: 100%;
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 5px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .info-home h3 {
@@ -175,12 +234,4 @@ h2 {
   }
 
   /* Termina el home */
-
-  /* parte de los items de las imagenes de los productos que estan en oferta */
-  .container-oferta {
-    grid-column: 1/-1;
-   text-align: center;
-  }
-
-  /* fin parte de los items de las imagenes de los productos que estan en oferta */
 }

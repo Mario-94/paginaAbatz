@@ -44,22 +44,22 @@ export class CardImage extends React.Component {
     const currentTodos = items.slice(start, end);
     const renderTodos = currentTodos.map((dato, index) => {
       return (
-        <div className="container" key={index}>
+        <div key={index}>
           {/* Esta es la imagen */}
 
-          <div className="content_card">
+          <div className="item-card">
             <img
               className="card_img"
               alt="Producto"
               src={`https://abattz.com/img/AppAbatz/${dato.Articulo}.jpg`}
               title="Articulo"
             />
-            
-              <h1> {dato.Descripcion1}</h1>
+            <div className="card-info-item">
+              <p className="card-description"> {dato.Descripcion1}</p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
-              <h2> ${this._valorReal(dato.Precio, dato.Porcentaje)}</h2>
-              <h1>Precio por:{dato.Unidad}</h1>
-            
+              <p className="precio-item"> precio ${this._valorReal(dato.Precio, dato.Porcentaje)} por {dato.Unidad}</p>
+             
+            </div>
           </div>
         </div>
       );
@@ -88,7 +88,7 @@ export class CardImage extends React.Component {
       <div>
         {this.state.bandera === true ? (
           <div>
-            <div>{renderTodos}</div>
+            <div className="container-CardItems" >{renderTodos}</div>
             <div>{renderPageNumbers}</div>
           </div>
         ) : (
