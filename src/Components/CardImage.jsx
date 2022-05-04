@@ -57,8 +57,11 @@ export class CardImage extends React.Component {
             <div className="card-info-item">
               <p className="card-description"> {dato.Descripcion1}</p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
-              <p className="precio-item"> precio ${this._valorReal(dato.Precio, dato.Porcentaje)} por {dato.Unidad}</p>
-             
+              <p className="precio-item">
+                {" "}
+                precio ${this._valorReal(dato.Precio, dato.Porcentaje)} por{" "}
+                {dato.Unidad}
+              </p>
             </div>
           </div>
         </div>
@@ -73,23 +76,25 @@ export class CardImage extends React.Component {
     // Este es el encargado de mostrar los items a mostrar
     const renderPageNumbers = pageNumbers.map((number) => {
       return (
-        <ul key={number}>
-          <li>
-            {/* el id lo utilizo para cambiar entre hojas
-             */}
-            <a id={number} onClick={this._handleClick}>
-              {number}
-            </a>
-          </li>
-        </ul>
+        <div >
+          <ul key={number}>
+            <li className="item-pagination">
+              {/* el id lo utilizo para cambiar entre hojas
+               */}
+              <a id={number} onClick={this._handleClick}>
+                {number}
+              </a>
+            </li>
+          </ul>
+        </div>
       );
     });
     return (
       <div>
         {this.state.bandera === true ? (
           <div>
-            <div className="container-CardItems" >{renderTodos}</div>
-            <div>{renderPageNumbers}</div>
+            <div className="container-CardItems">{renderTodos}</div>
+            <div className="container-pagination">{renderPageNumbers}</div>
           </div>
         ) : (
           <Spinner color="danger" type="border">

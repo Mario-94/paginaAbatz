@@ -12,7 +12,8 @@ body {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
 }
-/* Toda esta parte es de NavBar */
+/* TODO::
+Toda esta parte es de NavBar */
 .navBar-container {
   height: 30vmin;
   text-transform: uppercase;
@@ -73,9 +74,11 @@ body {
   margin: 5px;
   font-size: 4vmin;
 }
-/* Aqui finaliza el navBar  */
+/*
+TODO: Aqui finaliza el navBar  */
 
-/* Iniciamos con la parte de home */
+/* TODO:
+Iniciamos con la parte de home */
 
 .home-container {
   display: flex;
@@ -107,7 +110,8 @@ h2 {
   width: 100%;
 }
 
-/* Fin de la parte de home */
+/*TODO: 
+Fin de la parte de home */
 /* parte de los items de las imagenes de los productos que estan en oferta */
 /* Este es el container-Card de home*/
 .container-Card {
@@ -163,7 +167,33 @@ h2 {
   font-weight: bold;
 }
 
-/* fin parte de los items de las imagenes de los productos que estan en oferta */
+/*TODO: 
+fin parte de los items de las imagenes de los productos que estan en oferta */
+/*TODO: Empezamos con la parte de el paginado */
+.container-pagination ul {
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  margin: 2px;
+}
+.container-pagination {
+  background-color: red;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.item-pagination {
+  background-color: orange;
+  padding: 1px;
+  font-weight: bold;
+}
+/* FIXME: Finalizamos la parte de paginado */
 
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
 @media screen and (min-width: 520px) {
@@ -178,9 +208,11 @@ h2 {
     padding: 1vmin;
     position: sticky;
     top: 0;
-    font-size: 4vmin;
+    height: 150px;
   }
   .navigation-menu {
+    margin: 0;
+    padding: 0;
     display: flex;
   }
   .nav-logo-abatz {
@@ -191,13 +223,16 @@ h2 {
   .logo {
     width: 100px;
   }
+  .tituloAbatz {
+    font-size: 15px;
+  }
   .navBarItems a {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     margin: 5px;
-    font-size: 4vmin;
+    font-size: 15px;
   }
   /* Finaliza el nav Bar */
 
