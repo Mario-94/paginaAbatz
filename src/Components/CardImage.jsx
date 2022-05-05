@@ -59,7 +59,7 @@ export class CardImage extends React.Component {
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
               <p className="precio-item">
                 {" "}
-                precio ${this._valorReal(dato.Precio, dato.Porcentaje)} por{" "}
+                precio ${this._valorReal(dato.Precio, dato.Porcentaje)}{" "}
                 {dato.Unidad}
               </p>
             </div>

@@ -139,14 +139,13 @@ Fin de la parte de home */
   height: 200px;
   padding: 5px;
   border: 2px solid black;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px 15px 15px 15px;
   margin: 2px;
 }
 .item-card img {
   width: 80%;
   height: 50%;
   object-fit: contain;
-  border: 1px solid #ecab0f;
 }
 
 .card-info-item {
@@ -184,17 +183,58 @@ fin parte de los items de las imagenes de los productos que estan en oferta */
   width: 100%;
   display: flex;
   flex-direction: row;
-  font-size: 10px;
+  font-size: 14px;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 .item-pagination {
   background-color: orange;
   padding: 1px;
   font-weight: bold;
+  border-radius: 15px 15px 15px 0;
 }
 /* FIXME: Finalizamos la parte de paginado */
 
+/* TODO::
+Empezamos la parte de pie de pagina o footer*/
+
+.container-footer {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  background-color: #d2dbdf;
+  font-size: 2vmin;
+
+  /* border: 1px solid black; */
+}
+.redes-sociales a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.item-footer {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  white-space: pre-wrap;
+  border: 2px solid black;
+  border-style:outset;
+}
+.item-footer:first-child {
+  justify-content: flex-start;
+}
+.item-footer:last-child {
+  
+  text-transform: capitalize;
+}
+
+.redes-sociales {
+  font-size: 2.2vmin;
+}
+/* FIXME: Se finaliza la parte de footer */
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
 @media screen and (min-width: 520px) {
   /* Nav Bar de la pagina  */

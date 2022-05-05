@@ -46,7 +46,7 @@ function App() {
             <Paginacion />
           </Route>
         </Switch>
-        {/*  */}
+        <Footer/>
       </Router>
    
   );

@@ -1,43 +1,44 @@
-import React, { Component } from 'react';
-import '../App.css';
-import { Row, Col, Container, NavLink, Nav } from 'reactstrap';
+import React, { Component } from "react";
+import "../App.css";
 
 export class Footer extends Component {
   render() {
     return (
-      <div>
-        <Container className="footer" fluid>
-          <Row xs="3">
-            <Col xs="2">
-              <p> Redes sociales</p>
-              <Nav>
-                <NavLink
-                  active
-                  href="https://www.facebook.com/ABATZ-1090409927663523/?hc_ref=ARQPgDU9ZQqdSa8fzmozuS4VHwAYuWWKg05GDc6CgWh6UgqTlpO8mFXsgnHJ2_kJYEs&fref=nf&__tn__=kC-R"
-                >
-                  <img width="40"  alt="logo" />
-                </NavLink>
-              </Nav>
-            </Col>
-            <Col>
-              <p>ABARROTERA DE PATZCUARO SA DE CV.</p>
-              LIB. GRAL. IG. #250 COL CENTRO PATZCUARO, MICHOACAN CP: 61600
-            </Col>
-            {/* con este controlo el de contacto */}
-            <Col xs="6">
-              <p>Contactos:</p>
+      <div className="container-footer">
+        <div className="item-footer">
+          <div className="redes-sociales">
+            Rede social:
+            <a href="https://www.facebook.com/people/Abarrotera-De-P%C3%A1tzcuaro-SA-CV/100013669020380/">Facebook</a>
+          </div>
+        </div>
 
-              <p>TEL: 434-342-26-48</p>
-
-              <p>TEL: 434-596-84-51</p>
-
-              <p className="letraFooter">
-                E-mail: abarrotera_patzcuaro@hotmail.com abatzcxc@gmail.com
-                contacto@abattz.com
+        <div className="item-footer">
+          <div className="contacto">
+            <span>ABARROTERA DE PATZCUARO SA DE CV</span>
+          </div>
+        </div>
+        <div className="item-footer">
+          <div className="contacto">
+            <span>
+              LIB GRAL IG Z S/N COL CENTRO PATZCUARO, MICHOACÃN CP 61600
+            </span>
+          </div>
+        </div>
+        <div className="item-footer">
+          <div className="contacto">
+            <p>
+              TEL:
+            
+              434-342-26-48
+               434-596-84-51 </p>
+               <p>E-mail:
+               abarrotera_patzcuaro
+               @hotmail.com 
               </p>
-            </Col>
-          </Row>
-        </Container>
+              <p>abatzcxc@gmail.com</p>
+            
+          </div>
+        </div>
       </div>
     );
   }
