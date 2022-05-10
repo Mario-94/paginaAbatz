@@ -51,16 +51,17 @@ export class CardImage extends React.Component {
             <img
               className="card_img"
               alt="Producto"
-              src={`https://abattz.com/img/AppAbatz/${dato.Articulo}.jpg`}
+              src={`https://abattz.com/img/productos/${dato.Articulo}.jpg`}
               title="Articulo"
             />
             <div className="card-info-item">
               <p className="card-description"> {dato.Descripcion1}</p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
               <p className="precio-item">
-                {" "}
-                precio ${this._valorReal(dato.Precio, dato.Porcentaje)}{" "}
-                {dato.Unidad}
+                precio por {dato.Unidad} $
+                <span className="precio-real">
+                {this._valorReal(dato.Precio, dato.Porcentaje)}
+                  </span>
               </p>
             </div>
           </div>
@@ -76,7 +77,7 @@ export class CardImage extends React.Component {
     // Este es el encargado de mostrar los items a mostrar
     const renderPageNumbers = pageNumbers.map((number) => {
       return (
-        <div >
+        <div>
           <ul key={number}>
             <li className="item-pagination">
               {/* el id lo utilizo para cambiar entre hojas

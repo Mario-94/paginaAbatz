@@ -37,7 +37,7 @@ export class Home extends Component {
                   Nos encontramos ubicados en Lib. Gral. Ignacion #250 Col.
                   Centro Pátzcuaro
                 </h3>
-                <h2>Te esperamos!!!!!</h2>
+                <h2>En abatz donde tus ganancias llegan rapido</h2>
                 <img src={tienda} className="" />
               </div>
              
