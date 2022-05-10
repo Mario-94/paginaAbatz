@@ -8,6 +8,9 @@ import {
   ToastHeader,
   Spinner,
 } from "reactstrap";
+import Super from "../images/fachada-super.jpeg";
+import matriz from "../images/fachada-matriz.jpg";
+import pueblita from "../images/fachada-pueblita.jpg";
 
 export class Sucursal extends Component {
   constructor(props) {
@@ -32,8 +35,36 @@ export class Sucursal extends Component {
             variedad de productos
           </span>
         </div>
+        {/* Matriz */}
         <div className="items-sucursal">
           <div className="datos-sucursal">
+            <img src={matriz} alt="" />
+
+            <div className="info-sucursal">
+              <h1>Abarrotera De Patzcuaro S.A. De C.V.</h1>
+              <p>comercio al medio mayoreo</p>
+              <span className="dirreccion-sucursal">domicilio: </span>
+              <span> En Libramiento Iganacio Zaragoza #250 col el centro</span>
+            </div>
+            <div>
+              <div className="contacto-sucursal">
+                <div>Telefonos</div>
+                <div className="contacto-sucursal-datos">
+                  434-342-26-48 434-596-84-51
+                </div>
+              </div>
+              <div className="contacto-sucursal">
+                <div>Email</div>
+                <div className="contacto-sucursal-datos">
+                  abarrotera_patzcuaro @hotmail.com abatzcxc@gmail.com
+                </div>
+              </div>
+              <div className="contacto-sucursal">
+                <div>codigo porstal</div>
+                <div className="contacto-sucursal-datos">61600</div>
+              </div>
+            </div>
+
             <div className="mapa-sucursal">
               <iframe
                 title="mySucursal"
@@ -42,17 +73,37 @@ export class Sucursal extends Component {
                 loading="lazy"
               />
             </div>
-            <div className="info-sucursal">
-              <p>Nos encontramos ubicados:</p>
-              <p> En Libramiento Iganacio Zaragoza # 356B</p>
-              <p>Colonia el centro</p>
-              <p>Con horarios: lunes a viernes 7:00 am a 8:30 pm</p>
-              <p>Sábado: 7:00 AM a 8:30 PM Domingo: 7:00 AM a 2:00 PM</p>
-            </div>
           </div>
         </div>
+
+        {/* Super */}
         <div className="items-sucursal">
           <div className="datos-sucursal">
+            <img src={Super} alt="" />
+
+            <div className="info-sucursal">
+              <h1>Super ABATZ medio mayoreo</h1>
+              <p>comercio al medio mayoreo</p>
+              <span className="dirreccion-sucursal">domicilio: </span>
+              <span> Bernal Jiménez #61 Colonia El Centro</span>
+            </div>
+            <div>
+              <div className="contacto-sucursal">
+                <div>Telefonos</div>
+                <div className="contacto-sucursal-datos">434-68-80-038</div>
+              </div>
+              <div className="contacto-sucursal">
+                <div>Email</div>
+                <div className="contacto-sucursal-datos">
+                  abatzcxc@gmail.com
+                </div>
+              </div>
+              <div className="contacto-sucursal">
+                <div>codigo postal</div>
+                <div className="contacto-sucursal-datos">61600</div>
+              </div>
+            </div>
+
             <div className="mapa-sucursal">
               <iframe
                 title="mySucursal"
@@ -61,17 +112,37 @@ export class Sucursal extends Component {
                 loading="lazy"
               />
             </div>
-            <div className="info-sucursal">
-              <p>Nos encontramos ubicados:</p>
-              <p> bernal jiménez #61</p>
-              <p>Colonia el centro</p>
-              <p>Con horarios: lunes a viernes 7:00 am a 8:30 pm</p>
-              <p>Sábado: 7:00 AM a 8:30 PM Domingo: 7:00 AM a 2:00 PM</p>
-            </div>
           </div>
         </div>
+
+        {/* pueblita */}
         <div className="items-sucursal">
           <div className="datos-sucursal">
+            <img src={pueblita} alt="" />
+
+            <div className="info-sucursal">
+              <h1>Super ABATZ Pueblita</h1>
+              <p>comercio al medio mayoreo</p>
+              <span className="dirreccion-sucursal">domicilio: </span>
+              <span> Ascencio #68 Pátzcuaro, Mich.</span>
+            </div>
+            <div>
+              <div className="contacto-sucursal">
+                <div>Telefonos</div>
+                <div className="contacto-sucursal-datos">434-34-22-648</div>
+              </div>
+              <div className="contacto-sucursal">
+                <div>Email</div>
+                <div className="contacto-sucursal-datos">
+                  abatzcxc@gmail.com
+                </div>
+              </div>
+              <div className="contacto-sucursal">
+                <div>codigo postal</div>
+                <div className="contacto-sucursal-datos">61600</div>
+              </div>
+            </div>
+
             <div className="mapa-sucursal">
               <iframe
                 title="mySucursal"
@@ -80,21 +151,12 @@ export class Sucursal extends Component {
                 loading="lazy"
               />
             </div>
-            <div className="info-sucursal">
-              <p>Nos encontramos ubicados:</p>
-              <p>asencio</p>
-              <p>Colonia pueblita</p>
-              <p>Con horarios: lunes a viernes 7:00 am a 8:30 pm</p>
-              <p>Sábado: 7:00 AM a 8:30 PM Domingo: 7:00 AM a 2:00 PM</p>
-            </div>
           </div>
         </div>
 
-      
-          <div className="titulo-sucursal">
-            <span>recuerda que en abatz Tus Ganancias llegan RAPIDO</span>
-          </div>
-        
+        <div className="titulo-sucursal">
+          <span>recuerda que en abatz Tus Ganancias llegan RAPIDO</span>
+        </div>
       </div>
     );
   }

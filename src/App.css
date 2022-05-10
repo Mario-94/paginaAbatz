@@ -266,15 +266,32 @@ Empezamos la parte de pie de pagina o footer*/
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
 .items-sucursal {
   margin: 5px;
   background-color: #ececec;
+  border-radius: 15px;
 }
 .titulo-sucursal {
   width: 100%;
   border: 5px solid #f23838;
   font-size: 3vmin;
+  border-radius: 15px;
+  
+}
+
+.datos-sucursal img {
+  width: 100%;
+  height: 50%;
+  border-radius: 15px;
+  object-fit: contain;
+}
+.contacto-sucursal {
+  border: 10px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
 }
 .mapa-sucursal {
   padding: 10px;
@@ -282,11 +299,20 @@ Empezamos la parte de pie de pagina o footer*/
   height: 100%;
 }
 .info-sucursal {
-  background-color: #ececec;
+  background-color: white;
   border: 5px solid #f23838;
+  border-radius: 15px;
+  margin: 5px;
+}
+.dirreccion-sucursal{
+  font-weight: bolder;
 }
 .titulo-sucursal:nth-child(2) {
   text-decoration: underline #f23838;
+}
+.contacto-sucursal-datos {
+  text-transform: lowercase;
+  background-color: white;
 }
 
 /* FIXME: Fin de apartado sucursales */
@@ -370,38 +396,31 @@ Empezamos la parte de pie de pagina o footer*/
 
   .container-sucursal {
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  .titulo-sucursal {
+    grid-column: 1/-1;
   }
   .items-sucursal {
-    margin: 5px;
-    background-color: #ececec;
-    border-radius: 15px;
-  }
-  .titulo-sucursal:first-child {
     grid-column: 1/-1;
-    width: 100%;
-    border: 5px solid #f23838;
-    font-size: 3vmin;
-    border-radius: 15px;
   }
-  .mapa-sucursal {
-    padding: 10px;
+  .datos-sucursal {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+  .datos-sucursal img {
     width: 100%;
     height: 100%;
+    
   }
   .info-sucursal {
-    background-color: #ececec;
-    border: 5px solid #f23838;
-    border-radius: 15px;
+    grid-column: 2/-1;
+    font-size: 15px;
   }
-  .items-sucursal:nth-child(4) {
-    grid-column: 1/-1;
+  .mapa-sucursal {
+    grid-column: 2/-1;  
   }
-  .titulo-sucursal:last-child {
-    border-radius: 15px;
-    grid-column: 1/-1;
-    text-decoration: underline #f23838;
+  .mapa-sucursal iframe{
+    height: 100%;
   }
-
   /* FIXME: Finaliza la parte de sucursales */
 }
