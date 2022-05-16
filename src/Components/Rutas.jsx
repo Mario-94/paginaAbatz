@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import {
   Container,
   ListGroup,
@@ -7,60 +7,113 @@ import {
   Spinner,
 } from "reactstrap";
 
-export class Rutas extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoading: true,
-    };
+function Rutas() {
+  const [isListRuta, setIsListRuta] = useState(true);
+  function handleClick() {
+    setIsListRuta(!isListRuta);
   }
-  componentDidMount() {
-    this.setState({
-      isLoading: false,
-    });
-  }
-  render() {
-    return this.state.isLoading ? (
-      <Spinner color="danger"></Spinner>
-    ) : (
-      <div>
-        <ToastHeader>
-          <h2>
-            {" "}
-            Abatzcuenta con una extensa infraestructura en distribución en el
-            estado con 23 zonas de distribución a nivel estatal.
-          </h2>
-        </ToastHeader>
-        <ListGroup flush>
 
-        <h2> Nuestros canales de distribucion estan dedicados a cubir las necesidades de nuestros clientes.</h2>
-       <ListGroupItem disabled> 
-       <ul>
-            <ol>
-              <h4>
-              <li>Mayoreo</li>
-              <li>Medio mayoreo</li>
-              <li>Cuentas especiales</li>
-              <li>Tradicionales</li>
-              <li>Consumidor final</li>
-              </h4>
-            </ol>
-          </ul>
-
-       
-       </ListGroupItem>
-        <Container>
-          <iframe
-            src="https://www.google.com/maps/d/embed?mid=1punp5PvCJz4mQUsSn_PaCTAUZy3nxLWR"
-            width="100%"
-            height="480"
-            title="myMaps"
-          ></iframe>
-        </Container>
-        </ListGroup>
+  return (
+    <div className="container-rutas">
+      <div className="rutas-data">
+        <div className="texto-rutas">
+          <span>
+            abarrotera de patzcuaro cuenta con una extensa infraestructura en
+            distribución contando con 52 zonas de distribución dentro del
+            estado.
+          </span>
+        </div>
       </div>
-    );
-  }
+      <div className="rutas-data">
+        <div className="texto-rutas">
+          <h2>
+            Nuestros canales de distribucion estan dedicados a cubir las
+            necesidades de nuestros clientes.
+          </h2>
+          <ol>
+            <li>Mayoreo</li>
+            <li>Medio mayoreo</li>
+            <li>Cuentas eslieciales</li>
+            <li>Tradicionales</li>
+            <li>Consumidor final</li>
+          </ol>
+        </div>
+      </div>
+      <div className="rutas-data">
+        <div className="mapa-rutas">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yxxqnN_DABfECC0jfYwSCmGo3HQZV4-4&ehbc=2E312F" />
+        </div>
+      </div>
+      <div className="rutas-data">
+        <ol className="rutas-lista">
+          <li>Ario de Rosales </li>
+          <li>Zacapu</li>
+          <li>Quiroga</li>
+          <li>Villa Madero</li>
+          <li>Erongarícuaro</li>
+          <div>{console.log(`este es el estod ${isListRuta}`)}</div>
+          <div className={isListRuta ? "oculta-rutas-estilo" : "mostrar-rutas-estilo"}>
+            <li> Puruándiro</li>
+            <li>Panindícuaro</li>
+            <li>Cuanajo</li>
+            <li>Huiramba</li>
+            <li>Puruarán</li>
+            <li>Nueva Italia</li>
+            <li>Tingambato</li>
+            <li>La Huacana</li>
+            <li>Pátzcuaro</li>
+            <li>Buena Vista</li>
+            <li>Zirahuén</li>
+            <li>El Cahulote</li>
+            <li>Tacámbaro</li>
+            <li>Ihuatzio</li>
+            <li>Uruapan</li>
+            <li>Paracho de Verduzco</li>
+            <li>Zinapécuaro</li>
+            <li>Huaniqueo de Morales</li>
+            <li>Erongarícuaro</li>
+            <li>Santa Clara del Cobre</li>
+            <li>Uriangato - Morelia</li>
+            <li>Morelia</li>
+            <li>Opopeo</li>
+            <li>Tecario</li>
+            <li>Pedernales</li>
+            <li>Taretan</li>
+            <li>Acuitzio del Canje</li>
+            <li>Cherán</li>
+            <li>Coeneo</li>
+            <li>Comanja</li>
+            <li>Cucuchucho</li>
+            <li>Cuitzeo del Porvenir</li>
+            <li>El Pueblito</li>
+            <li>La Vitela</li>
+            <li>Lagunillas</li>
+            <li>Lombardía</li>
+            <li>Matugeo</li>
+            <li>Nahuatzen</li>
+            <li>Pátzcuaro</li>
+            <li>San Francisco Pichátaro</li>
+            <li>Puácuaro</li>
+            <li>San ángel</li>
+            <li>Tocuaro</li>
+            <li>Turicato</li>
+            <li>Tzintzuntzan</li>
+            <li>San Francisco Uricho</li>
+            <li>Villa Jiménez</li>
+          </div>
+          <div onClick={handleClick}>
+            {isListRuta ? (
+              <div className={isListRuta ? "bottom-mostrar-rutas" : "bottom-ocultar-rutas"}>
+                mostrar...
+              </div>
+            ) : (
+              <div className={isListRuta ? "bottom-ocultar-rutas" : "bottom-mostrar-rutas"}>...ocultar</div>
+            )}
+          </div>
+        </ol>
+      </div>
+    </div>
+  );
 }
 
 export default Rutas;

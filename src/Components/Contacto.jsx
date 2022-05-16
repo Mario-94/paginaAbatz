@@ -56,14 +56,16 @@ export class Contacto extends Component {
     return this.state.isLoading ? (
       <Spinner color="danger"></Spinner>
     ) : (
-      <div>
-        <Container>
-          <img src={atencion} width="100%" alt="mapaContacto" />
+      <div className='container-contacto'>
+       <div className='imagen-contacto' >
+
+          <img src={atencion}  alt="mapaContacto" />
+       </div>
           {/* en esta parte es el mensaje  */}
           <h1>Dejanos tu mensaje </h1>
           <hr width="100%" />
           {/* aqui empieza el formulario */}
-          <Form onSubmit={this._handleSubmit}> {/* Este metodo permite enviar la informacion a nuesta api */}
+          <form onSubmit={this._handleSubmit}> {/* Este metodo permite enviar la informacion a nuesta api */}
             <Row>
               {/* Esta parte es el nombre y apellido */}
               <Col xs="6">
@@ -133,9 +135,9 @@ export class Contacto extends Component {
                 </Col>
               </FormGroup>
             </Row>
-          </Form>
-        </Container>
-      </div>
+          </form>
+        </div>
+      
     );
   }
 }

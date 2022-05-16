@@ -266,7 +266,6 @@ Empezamos la parte de pie de pagina o footer*/
   display: flex;
   flex-direction: column;
   text-align: center;
-  
 }
 .items-sucursal {
   margin: 5px;
@@ -278,7 +277,6 @@ Empezamos la parte de pie de pagina o footer*/
   border: 5px solid #f23838;
   font-size: 3vmin;
   border-radius: 15px;
-  
 }
 
 .datos-sucursal img {
@@ -304,7 +302,7 @@ Empezamos la parte de pie de pagina o footer*/
   border-radius: 15px;
   margin: 5px;
 }
-.dirreccion-sucursal{
+.dirreccion-sucursal {
   font-weight: bolder;
 }
 .titulo-sucursal:nth-child(2) {
@@ -317,6 +315,63 @@ Empezamos la parte de pie de pagina o footer*/
 
 /* FIXME: Fin de apartado sucursales */
 
+/* TODO: Empezamos lo de rutas */
+.container-rutas {
+  display: flex;
+  flex-direction: column;
+  font-size: 3vmin;
+  text-align: center;
+}
+.rutas-data {
+  margin: 5px;
+  background-color: #ececec;
+  border-radius: 15px;
+}
+.texto-rutas {
+  width: 100%;
+  border: 5px solid #f23838;
+  font-size: 3vmin;
+  border-radius: 15px;
+}
+.texto-rutas ol {
+  text-align: left;
+}
+.mapa-rutas iframe {
+  width: 100%;
+  height: 450px;
+}
+.rutas-lista {
+  width: 100%;
+}
+.oculta-rutas-estilo {
+  /* con esto controlo que se ajuste deacuerdo al texto de lo contrario ocupa el espacio de la lista aun que no se muestre */
+  display: none;
+  visibility: hidden;
+} /* en estas dos siguientes solo hago el visbility:visible solo para que no este solo, no afecta si lo quito */
+.mostrar-rutas-estilo {
+  visibility: visible;
+}
+.bottom-mostrar-rutas {
+  visibility: visible;
+}
+.bottom-ocultar-rutas {
+  visibility: hidden;
+}
+/* FIXME:Finaliza lo de rutas*/
+
+/* TODO: Empezamos la parte de nosotros */
+/* Por el momento no hemos terminado esta parte por que no me han mandado las cosas Gera ni el contador*/
+/* FIXME: Terminamos la parte de nosotros */
+
+/* TODO: Empezamos la parte de conctacto*/
+.container-contacto{
+
+}
+.imagen-contacto img{
+width: 50%;
+}
+
+/* FIXME: Terminamos la parte de contacto */
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
 @media screen and (min-width: 520px) {
   /* TODO: Nav Bar de la pagina  */
@@ -361,7 +416,7 @@ Empezamos la parte de pie de pagina o footer*/
   /*TODO: Empieza el home */
   .home-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .home-item {
     width: 100%;
@@ -410,17 +465,54 @@ Empezamos la parte de pie de pagina o footer*/
   .datos-sucursal img {
     width: 100%;
     height: 100%;
-    
   }
   .info-sucursal {
     grid-column: 2/-1;
     font-size: 15px;
   }
   .mapa-sucursal {
-    grid-column: 2/-1;  
+    grid-column: 2/-1;
   }
-  .mapa-sucursal iframe{
+  .mapa-sucursal iframe {
     height: 100%;
   }
   /* FIXME: Finaliza la parte de sucursales */
+
+  /* TODO: Empezamos lo de rutas */
+  .container-rutas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  .rutas-data {
+    grid-column: 1/-1;
+    margin: 2px;
+    background-color: #ececec;
+    border-radius: 10px;
+  }
+  .rutas-data:nth-child(3) {
+    grid-column: 1/2;
+  }
+  .rutas-data:last-child {
+    grid-column: 2/-1;
+  }
+  .texto-rutas {
+    width: 100%;
+    border: 5px solid #f23838;
+    font-size: 3vmin;
+    border-radius: 15px;
+  }
+  .texto-rutas ol {
+    text-align: center;
+  }
+  .estilo-mapa {
+    grid-column: 1/2;
+  }
+  .mapa-rutas iframe {
+    grid-column: 1/2;
+    height: 450px;
+  }
+  .rutas-lista {
+    column-count: 2;
+  }
+  /* FIXME:Finaliza lo de rutas*/
 }
