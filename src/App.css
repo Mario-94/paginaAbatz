@@ -367,7 +367,7 @@ Empezamos la parte de pie de pagina o footer*/
 .container-contacto{
 
 }
-.imagen-contacto img{
+.items-contactos img{
 width: 50%;
 }
 
@@ -418,10 +418,18 @@ width: 50%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+  .seccion-info{
+    grid-column: 1/4;
+    
+  }
+  .seccion-info2{
+    grid-column: 4/-1;
+  }
   .home-item {
     width: 100%;
     padding-bottom: 10px;
   }
+ 
   .mapa iframe {
     width: 100%;
     height: 260px;
@@ -443,6 +451,7 @@ width: 50%;
     width: 100%;
     height: 100%;
     padding: 5px;
+    border-radius: 15px;
   }
 
   /*FIXME: Termina el home */
