@@ -20,8 +20,19 @@ export class Home extends Component {
           <Spinner color="danger" type="grow"></Spinner>
         ) : (
           <div className="home-container">
+            
             <section className="seccion-info">
               <div className="home-item">
+                <div className="info-home">
+                <h3>
+                    Nos encontramos ubicados en Lib. Gral. Ignacion #250 Col.
+                    Centro Pátzcuaro
+                  </h3>
+                  <h2>En abatz donde tus ganancias llegan rapido</h2>
+                 
+
+                  <img src={tienda} className="" />
+                
                 <div className="mapa">
                   <iframe
                     title="myFrame"
@@ -31,17 +42,7 @@ export class Home extends Component {
                     alt="mapaHome"
                   />
                 </div>
-              </div>
-            </section>
-            <section className="seccion-info2">
-              <div className="home-item">
-                <div className="info-home">
-                  <h3>
-                    Nos encontramos ubicados en Lib. Gral. Ignacion #250 Col.
-                    Centro Pátzcuaro
-                  </h3>
-                  <h2>En abatz donde tus ganancias llegan rapido</h2>
-                  <img src={tienda} className="" />
+                  
                 </div>
 
                 <h2 className="ofertasSemana">Ofertas de la semana</h2>

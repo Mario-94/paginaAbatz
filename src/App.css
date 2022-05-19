@@ -92,8 +92,9 @@ Iniciamos con la parte de home */
   padding: 10px;
 }
 .info-home {
-  background-color: #ececec;
+  background-color: #ececec;  
   border-radius: 15px 0 0 15px;
+ 
 }
 
 .info-home h3,
@@ -364,11 +365,10 @@ Empezamos la parte de pie de pagina o footer*/
 /* FIXME: Terminamos la parte de nosotros */
 
 /* TODO: Empezamos la parte de conctacto*/
-.container-contacto{
-
+.container-contacto {
 }
-.items-contactos img{
-width: 50%;
+.items-contactos img {
+  width: 50%;
 }
 
 /* FIXME: Terminamos la parte de contacto */
@@ -418,41 +418,41 @@ width: 50%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-  .seccion-info{
-    grid-column: 1/4;
-    
+  .seccion-info {
+    grid-column: 1/-1;
   }
-  .seccion-info2{
-    grid-column: 4/-1;
-  }
+
   .home-item {
     width: 100%;
     padding-bottom: 10px;
   }
- 
+
   .mapa iframe {
-    width: 100%;
-    height: 260px;
+    width: 50%;
+    height: 280px;
     margin-left: auto;
     margin-right: auto;
   }
+  .info-home{
+    height: 450px;
+  }
 
   .info-home h3 {
-    grid-column: 2/-1;
     font-size: 2vmin;
     padding: 2px;
+    text-align: center;
   }
   .info-home h2 {
-    grid-column: 2/-1;
     font-size: 2vmin;
     padding: 2px;
   }
   .info-home img {
-    width: 100%;
-    height: 100%;
+    width: 45%;
+    object-fit: contain;
     padding: 5px;
-    border-radius: 15px;
+    float: right;
   }
+
 
   /*FIXME: Termina el home */
 
