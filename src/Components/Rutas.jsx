@@ -10,7 +10,7 @@ function Rutas() {
   return (
     <div className="container-rutas">
       <div className="rutas-data">
-        <div className="texto-rutas">
+        <div className="encabezadoRutas">
           <span>
             abarrotera de patzcuaro cuenta con una extensa infraestructura en
             distribución contando con 52 zonas de distribución dentro del
@@ -20,7 +20,7 @@ function Rutas() {
       </div>
       <div className="rutas-data">
         <div className="texto-rutas">
-          <h2>
+          <h2 className="encabezadoRutas">
             Nuestros canales de distribucion estan dedicados a cubir las
             necesidades de nuestros clientes.
           </h2>

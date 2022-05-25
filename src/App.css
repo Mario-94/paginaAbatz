@@ -1,8 +1,18 @@
+:root {
+  --gray-lighter: #f7f7f7;
+  --gray-light: #dbdbdd;
+  --gray-dark: #aeafb3;
+  --gray-darker: #454547;
+  --pink: #e89d93;
+  --yellow: #eec71a;
+  --gray-red: #d63d3d;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -273,9 +283,11 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .titulo-sucursal {
   width: 100%;
-
   font-size: 3vmin;
   border-radius: 15px;
+  border: none;
+  border-bottom: 5px solid transparent;
+  border-image: -webkit-radial-gradient(red, transparent) 1 10;
 }
 
 .datos-sucursal img {
@@ -301,6 +313,10 @@ Empezamos la parte de pie de pagina o footer*/
   border-radius: 15px;
   margin: 5px;
 }
+.contacto-sucursal h1 {
+  background-color: white;
+}
+
 .dirreccion-sucursal {
   font-weight: bolder;
 }
@@ -323,15 +339,26 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .rutas-data {
   margin: 5px;
-  background-color: #ececec;
   border-radius: 15px;
+ 
 }
 .texto-rutas {
   width: 100%;
 
   font-size: 3vmin;
   border-radius: 15px;
+  
 }
+.encabezadoRutas{
+  font-size: 3vmin;
+  background-color: white;
+  margin: 5px;
+  border-radius: 15px;
+  border: none;
+  border-bottom: 5px solid transparent;
+  border-image: -webkit-radial-gradient(red, transparent) 1 10;
+}
+
 .texto-rutas ol {
   text-align: left;
 }
@@ -395,26 +422,45 @@ Empezamos la parte de pie de pagina o footer*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.acercaDeNosotros{
-  text-align: justify;
-  width: 90%;
-}
-.acercaDeNosotros h1{
   text-align: center;
+  border: 62px solid var(--gray-lighter);
+  border-top-color: var(--gray-red);
+  border-bottom-color: var(--gray-red);
 }
-.misionVision{
+
+.acercaDeNosotros {
   width: 90%;
 }
-.acercaMision{
-  background-color: red;
-}
-.acercaVision{
-  background-color: aqua ;
+.acercaDeNosotros h1 {
+  text-align: center;
+  border: none;
+  border-bottom: 5px solid transparent;
+  border-image: -webkit-radial-gradient(red, transparent) 1 10;
 }
 
-
+.misionVision {
+  width: 90%;
+}
+.misionVision h1 {
+  border: none;
+  border-bottom: 5px solid transparent;
+  border-image: -webkit-radial-gradient(red, transparent) 1 10;
+}
+.acercaMision {
+  padding: 10px;
+  text-align: left;
+}
+.acercaVision {
+  text-align: right;
+  padding: 10px;
+}
+.valores {
+  text-align: left;
+}
+.valores li {
+  list-style-type: square;
+  list-style-position: inside;
+}
 
 /* FIXME: Terminamos la parte de acerca de nosotros*/
 /* TODO: Empieza spinner de carga de pagina */
@@ -562,7 +608,7 @@ Empezamos la parte de pie de pagina o footer*/
   .rutas-data {
     grid-column: 1/-1;
     margin: 2px;
-    background-color: #ececec;
+    
     border-radius: 10px;
   }
   .rutas-data:nth-child(3) {
@@ -593,14 +639,10 @@ Empezamos la parte de pie de pagina o footer*/
   /* FIXME:Finaliza lo de rutas*/
   /* TODO: Empezamos la parte de acerca de nosotros */
 
-.misionVision{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(100px,1fr));
-}
+  .misionVision {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
 
-
-
-
-
-/* FIXME: Terminamos la parte de acerca de nosotros*/
+  /* FIXME: Terminamos la parte de acerca de nosotros*/
 }

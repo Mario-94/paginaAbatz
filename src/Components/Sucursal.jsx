@@ -31,7 +31,7 @@ export class Sucursal extends Component {
           <div className="datos-sucursal">
             <img src={matriz} alt="" />
 
-            <div className="info-sucursal">
+            <div className="contacto-sucursal">
               <h1>Abarrotera De Patzcuaro S.A. De C.V.</h1>
               <p>comercio al medio mayoreo</p>
               <span className="dirreccion-sucursal">domicilio: </span>
@@ -72,7 +72,7 @@ export class Sucursal extends Component {
           <div className="datos-sucursal">
             <img src={Super} alt="" />
 
-            <div className="info-sucursal">
+            <div className="contacto-sucursal">
               <h1>Super ABATZ medio mayoreo</h1>
               <p>comercio al medio mayoreo</p>
               <span className="dirreccion-sucursal">domicilio: </span>
@@ -111,7 +111,7 @@ export class Sucursal extends Component {
           <div className="datos-sucursal">
             <img src={pueblita} alt="" />
 
-            <div className="info-sucursal">
+            <div className="contacto-sucursal">
               <h1>Super ABATZ Pueblita</h1>
               <p>comercio al medio mayoreo</p>
               <span className="dirreccion-sucursal">domicilio: </span>
