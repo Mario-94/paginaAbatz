@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, Container, Spinner } from "reactstrap";
+
 import "../App.css";
 import tienda from "../images/tienda.jpg";
 import Paginacion from "./Paginacion";
@@ -17,7 +17,7 @@ export class Home extends Component {
     return (
       <div>
         {this.state.isLoading ? (
-          <Spinner color="danger" type="grow"></Spinner>
+         <div className="spinner"></div>
         ) : (
           <div className="home-container">
             

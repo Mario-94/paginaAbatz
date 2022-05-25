@@ -1,13 +1,4 @@
 import React, { Component } from "react";
-import {
-  Col,
-  Row,
-  Container,
-  ListGroup,
-  ListGroupItem,
-  ToastHeader,
-  Spinner,
-} from "reactstrap";
 import Super from "../images/fachada-super.jpeg";
 import matriz from "../images/fachada-matriz.jpg";
 import pueblita from "../images/fachada-pueblita.jpg";
@@ -26,7 +17,7 @@ export class Sucursal extends Component {
   }
   render() {
     return this.state.isLoading ? (
-      <Spinner color="danger"></Spinner>
+   <div className="spinner"></div>
     ) : (
       <div className="container-sucursal">
         <div className="titulo-sucursal">

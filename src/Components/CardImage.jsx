@@ -1,4 +1,4 @@
-import { Spinner } from "reactstrap";
+
 // import ModalOfertas from "./ModalOfertas"; por el momento ya no pondremos el modal, por que es un paso mas que estaria haciendo, ya en caso de agregar el carrito de compras pues hay si se haria esta parte
 import axios from "axios";
 import React from "react";
@@ -98,9 +98,7 @@ export class CardImage extends React.Component {
             <div className="container-pagination">{renderPageNumbers}</div>
           </div>
         ) : (
-          <Spinner color="danger" type="border">
-            {console.log("Error 500")}
-          </Spinner>
+          <div className="spinner"></div>
         )}
       </div>
     );

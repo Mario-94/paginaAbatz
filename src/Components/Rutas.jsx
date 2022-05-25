@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Container,
-  ListGroup,
-  ListGroupItem,
-  ToastHeader,
-  Spinner,
-} from "reactstrap";
+
 
 function Rutas() {
   const [isListRuta, setIsListRuta] = useState(true);
@@ -51,8 +45,8 @@ function Rutas() {
           <li>Quiroga</li>
           <li>Villa Madero</li>
           <li>Erongarícuaro</li>
-          <div>{console.log(`este es el estod ${isListRuta}`)}</div>
-          <div className={isListRuta ? "oculta-rutas-estilo" : "mostrar-rutas-estilo"}>
+          
+         
             <li> Puruándiro</li>
             <li>Panindícuaro</li>
             <li>Cuanajo</li>
@@ -66,6 +60,7 @@ function Rutas() {
             <li>Zirahuén</li>
             <li>El Cahulote</li>
             <li>Tacámbaro</li>
+            
             <li>Ihuatzio</li>
             <li>Uruapan</li>
             <li>Paracho de Verduzco</li>
@@ -81,6 +76,7 @@ function Rutas() {
             <li>Taretan</li>
             <li>Acuitzio del Canje</li>
             <li>Cherán</li>
+            <div className={isListRuta ? "oculta-rutas-estilo" : "mostrar-rutas-estilo"}>
             <li>Coeneo</li>
             <li>Comanja</li>
             <li>Cucuchucho</li>
@@ -104,10 +100,10 @@ function Rutas() {
           <div onClick={handleClick}>
             {isListRuta ? (
               <div className={isListRuta ? "bottom-mostrar-rutas" : "bottom-ocultar-rutas"}>
-                mostrar...
+                mostrar más...
               </div>
             ) : (
-              <div className={isListRuta ? "bottom-ocultar-rutas" : "bottom-mostrar-rutas"}>...ocultar</div>
+              <div className={isListRuta ? "bottom-ocultar-rutas" : "bottom-mostrar-rutas"}><h3>ocultar</h3></div>
             )}
           </div>
         </ol>

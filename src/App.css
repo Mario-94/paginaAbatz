@@ -20,7 +20,7 @@ Toda esta parte es de NavBar */
   height: 30vmin;
   text-transform: uppercase;
   /* background-color: #f23838; */
-  background-color: #f23838;
+  background-color: #d63d3d;
   padding: 1vmin;
   position: sticky;
   top: 0;
@@ -44,7 +44,7 @@ Toda esta parte es de NavBar */
   left: 0;
   width: 100%;
   height: calc(100vh- 60px);
-  background-color: #f23838;
+  background-color: #d63d3d;
   /* border-top: 1px solid rgb(224, 96, 96); */
   display: none;
 }
@@ -92,9 +92,8 @@ Iniciamos con la parte de home */
   padding: 10px;
 }
 .info-home {
-  background-color: #ececec;  
+  background-color: #ececec;
   border-radius: 15px 0 0 15px;
- 
 }
 
 .info-home h3,
@@ -104,8 +103,8 @@ h2 {
 .ofertasSemana {
   margin-top: 10px;
   text-align: center;
-  background-color: #f23838;
-  border-radius: 15px 0 0 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(192, 133, 24);
 }
 .info-home img {
   margin-left: auto;
@@ -208,7 +207,7 @@ Empezamos la parte de pie de pagina o footer*/
 
 .container-footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   background-color: #d2dbdf;
   font-size: 2vmin;
   margin-top: auto;
@@ -227,8 +226,7 @@ Empezamos la parte de pie de pagina o footer*/
   margin: 5px;
   display: flex;
   white-space: pre-wrap;
-  border: 2px solid black;
-  border-style: outset;
+
   text-transform: capitalize;
 }
 .item-footer:first-child {
@@ -275,7 +273,7 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .titulo-sucursal {
   width: 100%;
-  border: 5px solid #f23838;
+
   font-size: 3vmin;
   border-radius: 15px;
 }
@@ -299,7 +297,7 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .info-sucursal {
   background-color: white;
-  border: 5px solid #f23838;
+
   border-radius: 15px;
   margin: 5px;
 }
@@ -320,7 +318,7 @@ Empezamos la parte de pie de pagina o footer*/
 .container-rutas {
   display: flex;
   flex-direction: column;
-  font-size: 3vmin;
+  font-size: 2vmin;
   text-align: center;
 }
 .rutas-data {
@@ -330,7 +328,7 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .texto-rutas {
   width: 100%;
-  border: 5px solid #f23838;
+
   font-size: 3vmin;
   border-radius: 15px;
 }
@@ -366,12 +364,82 @@ Empezamos la parte de pie de pagina o footer*/
 
 /* TODO: Empezamos la parte de conctacto*/
 .container-contacto {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .items-contactos img {
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+}
+.contenedor-items {
+  width: 80%;
+}
+.datos {
+  width: 100%;
+  margin: 5px;
+}
+.datos button {
+  border-radius: 15px;
+  margin-left: 20%;
   width: 50%;
 }
 
 /* FIXME: Terminamos la parte de contacto */
+/* TODO: Empezamos la parte de acerca de nosotros */
+.container-acerdaDe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.acercaDeNosotros{
+  text-align: justify;
+  width: 90%;
+}
+.acercaDeNosotros h1{
+  text-align: center;
+}
+.misionVision{
+  width: 90%;
+}
+.acercaMision{
+  background-color: red;
+}
+.acercaVision{
+  background-color: aqua ;
+}
+
+
+
+/* FIXME: Terminamos la parte de acerca de nosotros*/
+/* TODO: Empieza spinner de carga de pagina */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #f23838;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* FIXME: Termina el spinner de carga*/
+
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
 @media screen and (min-width: 520px) {
   /* TODO: Nav Bar de la pagina  */
@@ -381,7 +449,7 @@ Empezamos la parte de pie de pagina o footer*/
   .navBar-container {
     display: flex;
     flex-direction: column;
-    background-color: #f23838;
+    background-color: #d63d3d;
     padding: 1vmin;
     position: sticky;
     top: 0;
@@ -433,7 +501,7 @@ Empezamos la parte de pie de pagina o footer*/
     margin-left: auto;
     margin-right: auto;
   }
-  .info-home{
+  .info-home {
     height: 450px;
   }
 
@@ -452,7 +520,6 @@ Empezamos la parte de pie de pagina o footer*/
     padding: 5px;
     float: right;
   }
-
 
   /*FIXME: Termina el home */
 
@@ -506,7 +573,7 @@ Empezamos la parte de pie de pagina o footer*/
   }
   .texto-rutas {
     width: 100%;
-    border: 5px solid #f23838;
+
     font-size: 3vmin;
     border-radius: 15px;
   }
@@ -524,4 +591,16 @@ Empezamos la parte de pie de pagina o footer*/
     column-count: 2;
   }
   /* FIXME:Finaliza lo de rutas*/
+  /* TODO: Empezamos la parte de acerca de nosotros */
+
+.misionVision{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px,1fr));
+}
+
+
+
+
+
+/* FIXME: Terminamos la parte de acerca de nosotros*/
 }
