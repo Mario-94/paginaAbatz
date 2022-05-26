@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import '../App.css'
 
 function Rutas() {
   const [isListRuta, setIsListRuta] = useState(true);

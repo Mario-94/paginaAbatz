@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Super from "../images/fachada-super.jpeg";
 import matriz from "../images/fachada-matriz.jpg";
 import pueblita from "../images/fachada-pueblita.jpg";
-
+import '../App.css'
 export class Sucursal extends Component {
   constructor(props) {
     super(props);

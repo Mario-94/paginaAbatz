@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import '../src/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  //eliminar esta linea una vez termine de estilar la pagina
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'

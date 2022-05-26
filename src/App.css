@@ -19,15 +19,14 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  color: #eee;
-  font-family: "a Anti Corona", "sans-serif";
+  color: #000;
+  font-family: "sans-serif";
   text-transform: uppercase;
   min-height: 100vh;
 }
 /* TODO::
 Toda esta parte es de NavBar */
 .navBar-container {
-  height: 30vmin;
   text-transform: uppercase;
   /* background-color: #f23838; */
   background-color: #d63d3d;
@@ -340,16 +339,14 @@ Empezamos la parte de pie de pagina o footer*/
 .rutas-data {
   margin: 5px;
   border-radius: 15px;
- 
 }
 .texto-rutas {
   width: 100%;
 
   font-size: 3vmin;
   border-radius: 15px;
-  
 }
-.encabezadoRutas{
+.encabezadoRutas {
   font-size: 3vmin;
   background-color: white;
   margin: 5px;
@@ -498,8 +495,6 @@ Empezamos la parte de pie de pagina o footer*/
     background-color: #d63d3d;
     padding: 1vmin;
     position: sticky;
-    top: 0;
-    height: 150px;
   }
   .navigation-menu {
     margin: 0;
@@ -608,7 +603,7 @@ Empezamos la parte de pie de pagina o footer*/
   .rutas-data {
     grid-column: 1/-1;
     margin: 2px;
-    
+
     border-radius: 10px;
   }
   .rutas-data:nth-child(3) {

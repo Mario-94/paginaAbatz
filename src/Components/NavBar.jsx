@@ -5,7 +5,6 @@ import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStore,
-  faBasketShopping,
   faBuildingColumns,
   faRoute,
   faAddressCard,

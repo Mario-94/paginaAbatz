@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-
 import "../App.css";
 import tienda from "../images/tienda.jpg";
-import Paginacion from "./Paginacion";
 import CardImage from "./CardImage";
 export class Home extends Component {
   // dejamos el spinner para ahora que pintemos las ofertas en lo que obtenemos respuesta del servidor, se dejara como muestra

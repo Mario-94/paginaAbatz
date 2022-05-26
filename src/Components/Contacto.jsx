@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import atencion from "../images/atencionCliente.jpg";
+import '../App.css'
 export class Contacto extends Component {
   constructor(props){
     super(props)
