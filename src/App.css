@@ -30,16 +30,21 @@ Toda esta parte es de NavBar */
   text-transform: uppercase;
   /* background-color: #f23838; */
   background-color: #d63d3d;
-  padding: 1vmin;
-  position: sticky;
-  top: 0;
-  font-size: 4vmin;
-  margin-bottom: 10px;
+  padding: 5px 20px;
 }
-/* Con este mantenjo el navegador comprimido hasta precionar el logo es que se expande el menu */
-.navigation-menu.expanded {
-  display: block;
+.navBar {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
 }
+.navBar div {
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
 .navBarItems a {
   text-decoration: none;
   color: #eee;
@@ -47,12 +52,7 @@ Toda esta parte es de NavBar */
 
 /* De esta manera expande el menu  */
 .navigation-menu {
-  flex-direction: column;
-
-  top: 100%;
-  left: 0;
   width: 100%;
-  height: calc(100vh- 60px);
   background-color: #d63d3d;
   /* border-top: 1px solid rgb(224, 96, 96); */
   display: none;
@@ -69,24 +69,16 @@ Toda esta parte es de NavBar */
 .logo {
   max-width: 100%;
 }
-
-.tituloAbatz {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #eee;
-  font-size: 4vmin;
-}
-
 .navBarItems {
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  margin: 5px;
-  font-size: 4vmin;
+  width: 100%;
+  text-align: center;
+}
+/* Con este mantenjo el navegador comprimido hasta precionar el logo es que se expande el menu */
+.navigation-menu.expanded {
+  display: block;
 }
 /*
-TODO: Aqui finaliza el navBar  */
+FIXME: Aqui finaliza el navBar  */
 
 /* TODO:
 Iniciamos con la parte de home */
@@ -381,11 +373,6 @@ Empezamos la parte de pie de pagina o footer*/
   visibility: hidden;
 }
 /* FIXME:Finaliza lo de rutas*/
-
-/* TODO: Empezamos la parte de nosotros */
-/* Por el momento no hemos terminado esta parte por que no me han mandado las cosas Gera ni el contador*/
-/* FIXME: Terminamos la parte de nosotros */
-
 /* TODO: Empezamos la parte de conctacto*/
 .container-contacto {
   display: flex;
@@ -421,7 +408,7 @@ Empezamos la parte de pie de pagina o footer*/
   align-items: center;
   text-align: center;
   border: 62px solid var(--gray-lighter);
-  border-top-color: var(--gray-red);
+  border-top-color: var(--gray-light);
   border-bottom-color: var(--gray-red);
 }
 
@@ -489,17 +476,13 @@ Empezamos la parte de pie de pagina o footer*/
   .hamburger {
     display: none;
   }
-  .navBar-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #d63d3d;
-    padding: 1vmin;
-    position: sticky;
-  }
+
   .navigation-menu {
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
+  }
+  .navBar {
+    justify-content: center;
   }
   .nav-logo-abatz {
     max-width: 100%;
@@ -508,18 +491,11 @@ Empezamos la parte de pie de pagina o footer*/
   }
   .logo {
     width: 100px;
+    order: 2;
   }
-  .tituloAbatz {
-    font-size: 15px;
+  .navBarItems {
   }
-  .navBarItems a {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    margin: 5px;
-    font-size: 15px;
-  }
+
   /* FIXME: Finaliza el nav Bar */
 
   /*TODO: Empieza el home */
