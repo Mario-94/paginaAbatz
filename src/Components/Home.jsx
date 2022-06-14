@@ -29,7 +29,7 @@ export class Home extends Component {
                   <h2>En abatz donde tus ganancias llegan rapido</h2>
                  
 
-                  <img src={tienda} className="" />
+                  <img src={tienda} alt="home" />
                 
                 <div className="mapa">
                   <iframe

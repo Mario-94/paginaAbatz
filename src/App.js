@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
 import Home from "./Components/Home";
-import Productos from "./Components/Productos";
+// import Productos from "./Components/Productos";
 import Sucursal from "./Components/Sucursal";
 import Rutas from "./Components/Rutas";
 import Nosotros from "./Components/Nosotros";

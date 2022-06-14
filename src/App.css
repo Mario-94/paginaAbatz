@@ -274,7 +274,7 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .titulo-sucursal {
   width: 100%;
-  font-size: 3vmin;
+  font-size: 25px;
   border-radius: 15px;
   border: none;
   border-bottom: 5px solid transparent;
@@ -300,13 +300,12 @@ Empezamos la parte de pie de pagina o footer*/
 }
 .info-sucursal {
   background-color: white;
-
   border-radius: 15px;
   margin: 5px;
 }
-.contacto-sucursal h1 {
+/* .contacto-sucursal h4 {
   background-color: white;
-}
+} */
 
 .dirreccion-sucursal {
   font-weight: bolder;
@@ -317,6 +316,11 @@ Empezamos la parte de pie de pagina o footer*/
 .contacto-sucursal-datos {
   text-transform: lowercase;
   background-color: white;
+}
+.estilo-card-datos {
+  background-color: white;
+  height: 60%;
+  font-size: 15px;
 }
 
 /* FIXME: Fin de apartado sucursales */
@@ -331,7 +335,17 @@ Empezamos la parte de pie de pagina o footer*/
 .rutas-data {
   margin: 5px;
   border-radius: 15px;
+  
+  
 }
+.rutas-data ol{
+  list-style: none;
+}
+.rutas-lista{
+  text-align: left;
+  list-style: none;
+}
+
 .texto-rutas {
   width: 100%;
 
@@ -346,6 +360,7 @@ Empezamos la parte de pie de pagina o footer*/
   border: none;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
+  
 }
 
 .texto-rutas ol {

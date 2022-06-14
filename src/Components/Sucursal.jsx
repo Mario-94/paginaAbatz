@@ -3,6 +3,7 @@ import Super from "../images/fachada-super.jpeg";
 import matriz from "../images/fachada-matriz.jpg";
 import pueblita from "../images/fachada-pueblita.jpg";
 import '../App.css'
+
 export class Sucursal extends Component {
   constructor(props) {
     super(props);
@@ -32,10 +33,13 @@ export class Sucursal extends Component {
             <img src={matriz} alt="" />
 
             <div className="contacto-sucursal">
-              <h1>Abarrotera De Patzcuaro S.A. De C.V.</h1>
-              <p>comercio al medio mayoreo</p>
+              <h4 >Abarrotera De Patzcuaro S.A. De C.V.</h4>
+              <div className="estilo-card-datos">
+              <p >comercio al medio mayoreo</p>
               <span className="dirreccion-sucursal">domicilio: </span>
-              <span> En Libramiento Iganacio Zaragoza #250 col el centro</span>
+                
+              <span > En Libramiento Iganacio Zaragoza #250 col centro</span>
+              </div>
             </div>
             <div>
               <div className="contacto-sucursal">
@@ -73,10 +77,13 @@ export class Sucursal extends Component {
             <img src={Super} alt="" />
 
             <div className="contacto-sucursal">
-              <h1>Super ABATZ medio mayoreo</h1>
+              <h4>Super ABATZ medio mayoreo</h4>
+              <div className="estilo-card-datos">
+                
               <p>comercio al medio mayoreo</p>
               <span className="dirreccion-sucursal">domicilio: </span>
               <span> Bernal Jiménez #61 Colonia El Centro</span>
+              </div>
             </div>
             <div>
               <div className="contacto-sucursal">
@@ -112,10 +119,13 @@ export class Sucursal extends Component {
             <img src={pueblita} alt="" />
 
             <div className="contacto-sucursal">
-              <h1>Super ABATZ Pueblita</h1>
+              <h4>Super ABATZ Pueblita</h4>
+              <div className="estilo-card-datos">
+
               <p>comercio al medio mayoreo</p>
               <span className="dirreccion-sucursal">domicilio: </span>
               <span> Ascencio #68 Pátzcuaro, Mich.</span>
+              </div>
             </div>
             <div>
               <div className="contacto-sucursal">

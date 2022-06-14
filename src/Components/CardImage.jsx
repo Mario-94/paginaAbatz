@@ -23,7 +23,7 @@ export class CardImage extends React.Component {
   componentDidMount() {
     axios
       .get(
-        `http://localhost:5000/ofertasAlmacen?page=${this.state.paginaInicio}`
+        `https://mario-94.github.io/pruebaJson/bd/bd.json?page=${this.state.paginaInicio}`
       )
       .then((res) => {
         const { products, paginasTotales } = res.data; //items= son los datos que traemos de la consulta, y paginasTotales, son todas las paginas que podemos mostrar, esto depende de los items que tengo
@@ -42,7 +42,7 @@ export class CardImage extends React.Component {
     const start = (page - 1) * todosPerPage;
     const end = page * todosPerPage;
     const currentTodos = items.slice(start, end);
-    const renderTodos = currentTodos.map((dato, index) => {
+    const renderTodos = currentTodos.map((dato,index) => {
       return (
         <div key={index}>
           {/* Esta es la imagen */}
@@ -75,16 +75,16 @@ export class CardImage extends React.Component {
       pageNumbers.push(i);
     }
     // Este es el encargado de mostrar los items a mostrar
-    const renderPageNumbers = pageNumbers.map((number) => {
+    const renderPageNumbers = pageNumbers.map((number,index) => {
       return (
-        <div>
-          <ul key={number}>
+        <div key={index}>
+          <ul >
             <li className="item-pagination">
               {/* el id lo utilizo para cambiar entre hojas
                */}
-              <a id={number} onClick={this._handleClick}>
+              <div  id={number} onClick={this._handleClick}>
                 {number}
-              </a>
+              </div>
             </li>
           </ul>
         </div>

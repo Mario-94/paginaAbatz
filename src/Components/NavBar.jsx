@@ -13,9 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  function handleClick() {
-    setIsNavExpanded(!isNavExpanded);
-  }
+
   return (
     <div className="navBar-container">
       {/* navINdex funcionara como el navbar  */}
@@ -24,7 +22,7 @@ function NavBar() {
         {/* este lo tuilizare como si fuera el menu de hamburguesa */}
         <div className="nav-logo-abatz">
           <img src={logo} alt="logo" title="Abatz" className="logo" />{" "}
-          <a>ABATZ</a>
+        <span>ABATZ</span>
         </div>
         <FontAwesomeIcon
           className="hamburger"

@@ -51,9 +51,15 @@ class Paginacion extends Component {
 
         <ul key={number} className="pagination">
           <li>
-            <a className="active" id={number} onClick={this._handleClick}>
+            <div
+              href=""
+              className="active"
+              alt="paginacion"
+              id={number}
+              onClick={this._handleClick}
+            >
               {number}
-            </a>
+            </div>
           </li>
         </ul>
       );

@@ -48,7 +48,7 @@ export class Contacto extends Component {
         console.log(error);
       }
     };
-    const {opcion,  firstName, lastName, phoneNumber, email, description } =
+    const { firstName, lastName, phoneNumber, email, description } =
       this.state;
     // con esta linea controlaremos la carga del componente, permitiendo cargar el componente, de tal manera que en caso de alguna falla esta mostrara como que esta cargando
     return this.state.isLoading ? (
@@ -56,7 +56,7 @@ export class Contacto extends Component {
     ) : (
       <div className="container-contacto">
         <div className="items-contactos">
-          <img src={atencion} alt="mapaContacto" />
+          <img src={atencion} alt="Contacto" />
         </div>
         <div className="items-contactos">
           {/* en esta parte es el mensaje  */}
