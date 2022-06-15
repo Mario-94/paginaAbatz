@@ -21,7 +21,7 @@ body {
   margin: 0;
   color: #000;
   font-family: "sans-serif";
-  text-transform: uppercase;
+ 
   min-height: 100vh;
 }
 /* TODO::
@@ -88,6 +88,11 @@ Iniciamos con la parte de home */
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.mensaje-home{
+  text-align: center;
+  border-bottom: 5px solid transparent;
+  border-image: -webkit-radial-gradient(red, transparent) 1 10;
 }
 .home-item {
   padding: 10px;
@@ -158,9 +163,7 @@ Fin de la parte de home */
   background-color: orange;
   border-radius: 0 0 15px 15px;
 }
-.card-info-item p:last-child {
-  /* background-color: red; */
-}
+
 .card-description {
   font-size: 15px;
 }
@@ -219,7 +222,7 @@ Empezamos la parte de pie de pagina o footer*/
   padding: 10px;
   text-decoration: none;
   color: #000;
-  text-transform: capitalize;
+  
   font-weight: bolder;
 }
 .item-footer {
@@ -228,14 +231,12 @@ Empezamos la parte de pie de pagina o footer*/
   display: flex;
   white-space: pre-wrap;
 
-  text-transform: capitalize;
+  
 }
 .item-footer:first-child {
   justify-content: flex-start;
 }
-.item-footer:nth-child(2) {
-  text-transform: uppercase;
-}
+
 
 .item-footer:nth-child(3) {
   text-transform: none;
@@ -401,6 +402,12 @@ Empezamos la parte de pie de pagina o footer*/
   width: 100%;
   border-radius: 15px;
 }
+.mensaje-contacto{
+  
+  border-bottom: 5px solid transparent;
+  border-image: -webkit-radial-gradient(red, transparent) 1 10;
+  margin-bottom: 80px;
+}
 .contenedor-items {
   width: 80%;
 }
@@ -422,9 +429,7 @@ Empezamos la parte de pie de pagina o footer*/
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 62px solid var(--gray-lighter);
-  border-top-color: var(--gray-light);
-  border-bottom-color: var(--gray-red);
+
 }
 
 .acercaDeNosotros {
@@ -517,6 +522,10 @@ Empezamos la parte de pie de pagina o footer*/
   .home-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .mensaje-home{
+    grid-column: 1/-1;
+
   }
   .seccion-info {
     grid-column: 1/-1;
@@ -631,4 +640,18 @@ Empezamos la parte de pie de pagina o footer*/
   }
 
   /* FIXME: Terminamos la parte de acerca de nosotros*/
+  /* TODO: Empieza el componente de contacto  */
+
+  .container-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    
+  }
+
+.mensaje-contacto{
+  grid-column: 1/-1;
+  text-align: center;
+ 
+}
+  /* FIXME: Terminamos el componente de contacto */
 }

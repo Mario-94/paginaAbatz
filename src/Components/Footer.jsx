@@ -10,7 +10,7 @@ export class Footer extends Component {
           <p>ABARROTERA DE PATZCUARO SA DE CV
           <br />
           <br />
-            nos ubicamos en: LIB GRAL IG Z #250COL CENTRO PATZCUARO, MICHOACN CP
+           Nos ubicamos en: LIB GRAL IG Z #250COL CENTRO PATZCUARO, MICHOACN CP
             61600
             </p>
         </div>
@@ -20,7 +20,7 @@ export class Footer extends Component {
             <span>434-342-26-48</span><br />
             <span>434-596-84-51</span><br />
             <span>443-504-9561</span><br />
-            <span>E-mail: abarrotera_patzcuaro @hotmail.com</span><br />
+            <span>E-mail: abarrotera_patzcuaro@hotmail.com</span><br />
             <span>abatzcxc@gmail.com</span>
           </div>
         </div>

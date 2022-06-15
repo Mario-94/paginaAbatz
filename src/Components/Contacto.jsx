@@ -1,23 +1,20 @@
 import axios from "axios";
 import React, { Component } from "react";
 import atencion from "../images/atencionCliente.jpg";
-import '../App.css'
+import "../App.css";
 export class Contacto extends Component {
-  constructor(props){
-    super(props)
-    this.state = { isLoading: true,
-    firstName: "",
-    lastName: "",
-    phoneNumber: "",
-    email: "",
-    description: "",
-    opcion: "Cliente",
-    
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true,
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      email: "",
+      description: "",
+      opcion: "Cliente",
+    };
   }
- 
- 
-
   componentDidMount() {
     this.setState({
       isLoading: false,
@@ -26,46 +23,46 @@ export class Contacto extends Component {
   render() {
     const selector = (e) => {
       this.setState({ opcion: e.target.value });
-      
     };
     const _handleChange = (e) => {
       //en esta parte hacemos la actualizacion de los datos trayendo el valor con el campo valor de nuestro formulario, haciendo referencia al valor del target name
       const { name, value } = e.target;
       this.setState({ [name]: value });
     };
-    const  _handleSubmit = async (e) => {
+    const _handleSubmit = async (e) => {
       try {
         //en esta constante traemmos todos los datos que se actualizaron en el metodo handleChange
         const datos = this.state;
-  
+
         //en esta parte realizamos envio del formulario
-        
+
         axios.post(`http://localhost:5000/email`, { datos }).then((res) => {
           // console.log(res);
         });
-        alert("Tus datos fueron enviados con exito, espera una respuesta pronto");
+        alert(
+          "Tus datos fueron enviados con exito, espera una respuesta pronto"
+        );
       } catch (error) {
         console.log(error);
       }
     };
-    const { firstName, lastName, phoneNumber, email, description } =
-      this.state;
+    const { firstName, lastName, phoneNumber, email, description } = this.state;
     // con esta linea controlaremos la carga del componente, permitiendo cargar el componente, de tal manera que en caso de alguna falla esta mostrara como que esta cargando
     return this.state.isLoading ? (
       <div className="spinner"></div>
     ) : (
       <div className="container-contacto">
-        <div className="items-contactos">
-          <img src={atencion} alt="Contacto" />
-        </div>
-        <div className="items-contactos">
-          {/* en esta parte es el mensaje  */}
+          
+        <div className="mensaje-contacto">
+
           <h1>Dejanos tu mensaje </h1>
         </div>
+  
         <section className="contenedor-items">
+       
           <div className="items-contactos ">
             {/* aqui empieza el formulario */}
-            <form onSubmit={_handleSubmit} >
+            <form onSubmit={_handleSubmit}>
               {/* Este metodo permite enviar la informacion a nuesta api */}
               {/* Esta parte es el nombre y apellido */}
               <select
@@ -73,12 +70,10 @@ export class Contacto extends Component {
                 className="datos"
                 onChange={(e) => selector(e)}
               >
-                <option value="Cliente" >
-                  Cliente
-                </option>
+                <option value="Cliente">Cliente</option>
                 <option value="Provedor">Provedor</option>
               </select>
-              
+
               <div>
                 <input
                   className="datos"
@@ -143,16 +138,15 @@ export class Contacto extends Component {
                 />
               </div>
               <div className="datos">
-                  <button type="submit">
-                    Enviar
-                  </button>
-                </div>
+                <button type="submit">Enviar</button>
+              </div>
             </form>
-            
-                
-              
           </div>
         </section>
+        <div className="items-contactos">
+          <img src={atencion} alt="Contacto" />
+        </div>
+     
       </div>
     );
   }

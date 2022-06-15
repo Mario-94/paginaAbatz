@@ -11,6 +11,9 @@ export class CardImage extends React.Component {
     bandera: false,
     //img: "https://picsum.photos/318/180"
   };
+  _subir(){
+    
+  }
   _valorReal(precio, porcentaje) {
     const resultado = precio - (precio * porcentaje) / 100;
     return resultado.toFixed(2);
@@ -45,6 +48,7 @@ export class CardImage extends React.Component {
     const renderTodos = currentTodos.map((dato,index) => {
       return (
         <div key={index}>
+          
           {/* Esta es la imagen */}
 
           <div className="item-card">
@@ -94,8 +98,9 @@ export class CardImage extends React.Component {
       <div>
         {this.state.bandera === true ? (
           <div>
+               <span class="ir-arriba icon-arrow-up2"></span>
             <div className="container-CardItems">{renderTodos}</div>
-            <div className="container-pagination">{renderPageNumbers}</div>
+            <div className="container-pagination" onClick={_subir}>{renderPageNumbers}</div>
           </div>
         ) : (
           <div className="spinner"></div>
