@@ -103,7 +103,7 @@ Iniciamos con la parte de home */
 }
 
 .info-home h3,
-h2 {
+h1 {
   text-align: center;
 }
 .ofertasSemana {
@@ -459,6 +459,7 @@ Empezamos la parte de pie de pagina o footer*/
   padding: 10px;
 }
 .valores {
+  
   text-align: left;
 }
 .valores li {
@@ -466,6 +467,12 @@ Empezamos la parte de pie de pagina o footer*/
   list-style-position: inside;
 }
 
+.cuadro-valores img{
+
+  width: 350px;
+  margin-left: 0;
+  margin-right: 0;
+}
 /* FIXME: Terminamos la parte de acerca de nosotros*/
 /* TODO: Empieza spinner de carga de pagina */
 .spinner {
@@ -500,6 +507,7 @@ Empezamos la parte de pie de pagina o footer*/
   .navigation-menu {
     display: flex;
     justify-content: center;
+    font-size: 15px;
   }
   .navBar {
     justify-content: center;
@@ -513,9 +521,7 @@ Empezamos la parte de pie de pagina o footer*/
     width: 100px;
     order: 2;
   }
-  .navBarItems {
-  }
-
+ 
   /* FIXME: Finaliza el nav Bar */
 
   /*TODO: Empieza el home */
@@ -646,6 +652,9 @@ Empezamos la parte de pie de pagina o footer*/
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     
+  }
+  .contenedor-items{
+    margin: 20px;
   }
 
 .mensaje-contacto{

@@ -13,11 +13,11 @@ function Rutas() {
     <div className="container-rutas">
       <div className="rutas-data">
         <div className="encabezadoRutas">
-          <span>
-            abarrotera de patzcuaro cuenta con una extensa infraestructura en
+          <b>
+            Abarrotera de Pàtzcuaro cuenta con una extensa infraestructura en
             distribución contando con 52 zonas de distribución dentro del
             estado.
-          </span>
+          </b>
         </div>
       </div>
       <div className="rutas-data">
@@ -29,7 +29,7 @@ function Rutas() {
           <ol>
             <li>Mayoreo</li>
             <li>Medio mayoreo</li>
-            <li>Cuentas eslieciales</li>
+            <li>Cuentas esenciales</li>
             <li>Tradicionales</li>
             <li>Consumidor final</li>
           </ol>
@@ -68,15 +68,15 @@ function Rutas() {
           </li>
 
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Puruándiro
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Panindícuaro
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faCarSide} />
             Cuanajo
           </li>
           <li>
@@ -84,15 +84,15 @@ function Rutas() {
             Huiramba
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Puruarán
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Nueva Italia
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faCarSide} />
             Tingambato
           </li>
           <li>
@@ -100,15 +100,15 @@ function Rutas() {
             La Huacana
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Pátzcuaro
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Buena Vista
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faCarSide} />
             Zirahuén
           </li>
           <li>
@@ -121,19 +121,19 @@ function Rutas() {
           </li>
 
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Ihuatzio
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Uruapan
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faCarSide} />
             Paracho de Verduzco
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            
             Zinapécuaro
           </li>
           <li>
@@ -141,15 +141,15 @@ function Rutas() {
             Huaniqueo de Morales
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Erongarícuaro
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Santa Clara del Cobre
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faCarSide} />
             Uriangato - Morelia
           </li>
           <li>
@@ -157,15 +157,15 @@ function Rutas() {
             Morelia
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Opopeo
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Tecario
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faCarSide} />
             Pedernales
           </li>
           <li>
@@ -173,11 +173,11 @@ function Rutas() {
             Taretan
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
             Acuitzio del Canje
           </li>
           <li>
-            <FontAwesomeIcon icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
             Cherán
           </li>
           <div
@@ -186,7 +186,7 @@ function Rutas() {
             }
           >
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faCarSide} />
               Coeneo
             </li>
             <li>
@@ -194,15 +194,15 @@ function Rutas() {
               Comanja
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckMoving} />
               Cucuchucho
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckFast} />
               Cuitzeo del Porvenir
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faCarSide} />
               El Pueblito
             </li>
             <li>
@@ -210,15 +210,15 @@ function Rutas() {
               La Vitela
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckMoving} />
               Lagunillas
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckFast} />
               Lombardía
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faCarSide} />
               Matugeo
             </li>
             <li>
@@ -226,15 +226,15 @@ function Rutas() {
               Nahuatzen
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckMoving} />
               Pátzcuaro
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckFast} />
               San Francisco Pichátaro
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faCarSide} />
               Puácuaro
             </li>
             <li>
@@ -242,23 +242,23 @@ function Rutas() {
               San ángel
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckMoving} />
               Tocuaro
             </li>
             <li>
-              <FontAwesomeIcon icon={faTruck} />
+              <FontAwesomeIcon icon={faTruckFast} />
               Turicato
             </li>
             <li>
-              <FontAwesomeIcon className=" " icon={faTruck} />
+              <FontAwesomeIcon icon={faCarSide} />
               Tzintzuntzan
             </li>
             <li>
-              <FontAwesomeIcon className=" " icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckFast} />
               San Francisco Uricho
             </li>
             <li>
-              <FontAwesomeIcon className=" " icon={faTruck} />
+            <FontAwesomeIcon icon={faTruckMoving} />
               Villa Jiménez
             </li>
           </div>

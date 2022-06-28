@@ -10,17 +10,17 @@ export class Footer extends Component {
           <p>ABARROTERA DE PATZCUARO SA DE CV
           <br />
           <br />
-           Nos ubicamos en: LIB GRAL IG Z #250COL CENTRO PATZCUARO, MICHOACN CP
+           Nos ubicamos en: Libramiento Ignacio Zaragoza #250 Col. Centro Pátzcuaro, Michoacán CP
             61600
             </p>
         </div>
         <div className="item-footer">
           <div>
-            <span>Telefonos:</span><br />
+            <span>Teléfonos:</span><br />
             <span>434-342-26-48</span><br />
             <span>434-596-84-51</span><br />
             <span>443-504-9561</span><br />
-            <span>E-mail: abarrotera_patzcuaro@hotmail.com</span><br />
+            <span>Email: abarrotera_patzcuaro@hotmail.com</span><br />
             <span>abatzcxc@gmail.com</span>
           </div>
         </div>
@@ -43,7 +43,7 @@ export class Footer extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                super abatz medio mayoreo
+                Super abatz medio mayoreo
               </a>
             </span><br />
             <span>

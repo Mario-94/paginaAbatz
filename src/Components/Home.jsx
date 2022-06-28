@@ -27,7 +27,9 @@ export class Home extends Component {
             <section className="seccion-info">
               <div className="home-item">
                 <div className="info-home">
-                  <h2>En abatz donde tus ganancias llegan rapido</h2>
+                  <h1><b>
+                  En abatz donde tus ganancias llegan rápido
+                    </b></h1>
 
                   <img src={tienda} alt="home" />
 

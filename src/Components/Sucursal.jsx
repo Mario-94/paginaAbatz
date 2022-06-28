@@ -23,8 +23,7 @@ export class Sucursal extends Component {
       <div className="container-sucursal">
         <div className="titulo-sucursal">
           <span>
-            En cualquiera de nuestras sucursales podra encontrar una amplia
-            variedad de productos
+          En cualquiera de nuestras sucursales podrá encontrar una amplia variedad de productos
           </span>
         </div>
         {/* Matriz */}
@@ -35,17 +34,23 @@ export class Sucursal extends Component {
             <div className="contacto-sucursal">
               <h4 >Abarrotera De Patzcuaro S.A. De C.V.</h4>
               <div className="estilo-card-datos">
-              <p >comercio al medio mayoreo</p>
-              <span className="dirreccion-sucursal">domicilio: </span>
+              <p >Comercio al medio mayoreo</p>
+              <span className="dirreccion-sucursal">Domicilio: </span>
                 
-              <span > En Libramiento Iganacio Zaragoza #250 col centro</span>
+              <span > En Libramiento Iganacio Zaragoza #250 Col.  centro</span>
               </div>
             </div>
             <div>
               <div className="contacto-sucursal">
-                <div>Telefonos</div>
+                <div>Teléfonos</div>
                 <div className="contacto-sucursal-datos">
-                  434-342-26-48 434-596-84-51
+                 <p>
+                 434-342-26-48 
+                  </p> 
+                  <p>
+
+                  434-596-84-51
+                  </p>
                 </div>
               </div>
               <div className="contacto-sucursal">
@@ -55,7 +60,7 @@ export class Sucursal extends Component {
                 </div>
               </div>
               <div className="contacto-sucursal">
-                <div>codigo porstal</div>
+                <div>Código postal</div>
                 <div className="contacto-sucursal-datos">61600</div>
               </div>
             </div>
@@ -80,14 +85,14 @@ export class Sucursal extends Component {
               <h4>Super ABATZ medio mayoreo</h4>
               <div className="estilo-card-datos">
                 
-              <p>comercio al medio mayoreo</p>
-              <span className="dirreccion-sucursal">domicilio: </span>
+              <p>Comercio al medio mayoreo</p>
+              <span className="dirreccion-sucursal">Domicilio: </span>
               <span> Bernal Jiménez #61 Colonia El Centro</span>
               </div>
             </div>
             <div>
               <div className="contacto-sucursal">
-                <div>Telefonos</div>
+                <div>Teléfonos</div>
                 <div className="contacto-sucursal-datos">434-68-80-038</div>
               </div>
               <div className="contacto-sucursal">
@@ -97,7 +102,7 @@ export class Sucursal extends Component {
                 </div>
               </div>
               <div className="contacto-sucursal">
-                <div>codigo postal</div>
+                <div>Código postal</div>
                 <div className="contacto-sucursal-datos">61600</div>
               </div>
             </div>
@@ -122,14 +127,14 @@ export class Sucursal extends Component {
               <h4>Super ABATZ Pueblita</h4>
               <div className="estilo-card-datos">
 
-              <p>comercio al medio mayoreo</p>
-              <span className="dirreccion-sucursal">domicilio: </span>
+              <p>Comercio al medio mayoreo</p>
+              <span className="dirreccion-sucursal">Domicilio: </span>
               <span> Ascencio #68 Pátzcuaro, Mich.</span>
               </div>
             </div>
             <div>
               <div className="contacto-sucursal">
-                <div>Telefonos</div>
+                <div>Teléfonos</div>
                 <div className="contacto-sucursal-datos">434-34-22-648</div>
               </div>
               <div className="contacto-sucursal">
@@ -139,7 +144,7 @@ export class Sucursal extends Component {
                 </div>
               </div>
               <div className="contacto-sucursal">
-                <div>codigo postal</div>
+                <div>Código postal</div>
                 <div className="contacto-sucursal-datos">61600</div>
               </div>
             </div>
@@ -156,7 +161,7 @@ export class Sucursal extends Component {
         </div>
 
         <div className="titulo-sucursal">
-          <span>recuerda que en abatz Tus Ganancias llegan RAPIDO</span>
+          <span>Tus Ganancias llegan RAPIDO</span>
         </div>
       </div>
     );

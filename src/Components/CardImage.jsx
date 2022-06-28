@@ -62,7 +62,7 @@ export class CardImage extends React.Component {
               <p className="card-description"> {dato.Descripcion1}</p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
               <p className="precio-item">
-                precio por {dato.Unidad} $
+                PRECIO POR {dato.Unidad} $
                 <span className="precio-real">
                 {this._valorReal(dato.Precio, dato.Porcentaje)}
                   </span>
@@ -98,9 +98,10 @@ export class CardImage extends React.Component {
       <div>
         {this.state.bandera === true ? (
           <div>
-               <span class="ir-arriba icon-arrow-up2"></span>
+            {/* En esta parte es donde inicia la representacion de las cardImg */}
+               {/* <span class="ir-arriba icon-arrow-up2"></span> */}
             <div className="container-CardItems">{renderTodos}</div>
-            <div className="container-pagination" onClick={_subir}>{renderPageNumbers}</div>
+            <div className="container-pagination" >{renderPageNumbers}</div>
           </div>
         ) : (
           <div className="spinner"></div>

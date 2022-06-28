@@ -55,7 +55,7 @@ export class Contacto extends Component {
           
         <div className="mensaje-contacto">
 
-          <h1>Dejanos tu mensaje </h1>
+          <h1>Déjanos tu mensaje</h1>
         </div>
   
         <section className="contenedor-items">
