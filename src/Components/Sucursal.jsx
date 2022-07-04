@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Super from "../images/fachada-super.jpeg";
 import matriz from "../images/fachada-matriz.jpg";
 import pueblita from "../images/fachada-pueblita.jpg";
-import '../App.css'
+import "../App.css";
 
 export class Sucursal extends Component {
   constructor(props) {
@@ -18,12 +18,13 @@ export class Sucursal extends Component {
   }
   render() {
     return this.state.isLoading ? (
-   <div className="spinner"></div>
+      <div className="spinner"></div>
     ) : (
       <div className="container-sucursal">
         <div className="titulo-sucursal">
           <span>
-          En cualquiera de nuestras sucursales podrá encontrar una amplia variedad de productos
+            En cualquiera de nuestras sucursales podrá encontrar una amplia
+            variedad de productos
           </span>
         </div>
         {/* Matriz */}
@@ -32,25 +33,20 @@ export class Sucursal extends Component {
             <img src={matriz} alt="" />
 
             <div className="contacto-sucursal">
-              <h4 >Abarrotera De Patzcuaro S.A. De C.V.</h4>
+              <h4>Abarrotera De Patzcuaro S.A. De C.V.</h4>
               <div className="estilo-card-datos">
-              <p >Comercio al medio mayoreo</p>
-              <span className="dirreccion-sucursal">Domicilio: </span>
-                
-              <span > En Libramiento Iganacio Zaragoza #250 Col.  centro</span>
+                <p>Comercio al medio mayoreo</p>
+                <span className="dirreccion-sucursal">Domicilio: </span>
+
+                <span> En Libramiento Iganacio Zaragoza #250 Col. centro</span>
               </div>
             </div>
             <div>
               <div className="contacto-sucursal">
                 <div>Teléfonos</div>
                 <div className="contacto-sucursal-datos">
-                 <p>
-                 434-342-26-48 
-                  </p> 
-                  <p>
-
-                  434-596-84-51
-                  </p>
+                  <p>434-342-26-48</p>
+                  <p>434-596-84-51</p>
                 </div>
               </div>
               <div className="contacto-sucursal">
@@ -84,10 +80,9 @@ export class Sucursal extends Component {
             <div className="contacto-sucursal">
               <h4>Super ABATZ medio mayoreo</h4>
               <div className="estilo-card-datos">
-                
-              <p>Comercio al medio mayoreo</p>
-              <span className="dirreccion-sucursal">Domicilio: </span>
-              <span> Bernal Jiménez #61 Colonia El Centro</span>
+                <p>Comercio al medio mayoreo</p>
+                <span className="dirreccion-sucursal">Domicilio: </span>
+                <span> Bernal Jiménez #61 Colonia El Centro</span>
               </div>
             </div>
             <div>
@@ -126,10 +121,9 @@ export class Sucursal extends Component {
             <div className="contacto-sucursal">
               <h4>Super ABATZ Pueblita</h4>
               <div className="estilo-card-datos">
-
-              <p>Comercio al medio mayoreo</p>
-              <span className="dirreccion-sucursal">Domicilio: </span>
-              <span> Ascencio #68 Pátzcuaro, Mich.</span>
+                <p>Comercio al medio mayoreo</p>
+                <span className="dirreccion-sucursal">Domicilio: </span>
+                <span> Ascencio #68 Pátzcuaro, Mich.</span>
               </div>
             </div>
             <div>

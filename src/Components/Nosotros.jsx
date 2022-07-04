@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import "../App.css";
-import honradez from "../images/honradez.png";
-import AmorAlTrabajo from "../images/AmorAlTrabajo.png";
-import Gratitud from "../images/Gratitud.png";
-import honestidad from "../images/honestidad.png";
-import puntualidad from "../images/puntualidad.png";
-import RespetoPorElDerecho from "../images/RespetoPorElDerecho.png";
-import responsabilidad from "../images/responsabilidad.png";
-import tenacidad from "../images/tenacidad.png";
+// import honradez from "../images/honradez.png";
+// import AmorAlTrabajo from "../images/AmorAlTrabajo.png";
+// import Gratitud from "../images/Gratitud.png";
+// import honestidad from "../images/honestidad.png";
+// import puntualidad from "../images/puntualidad.png";
+// import RespetoPorElDerecho from "../images/RespetoPorElDerecho.png";
+// import responsabilidad from "../images/responsabilidad.png";
+// import tenacidad from "../images/tenacidad.png";
 export class Nosotros extends Component {
   render() {
     return (
       <div className="container-acerdaDe">
+        
         <div className="acercaDeNosotros">
           <h1>Quiénes somos?</h1>
           <p>
@@ -28,26 +29,20 @@ export class Nosotros extends Component {
           <div className="acercaMision">
             <h1>Misión</h1>
             <p>
-              "Somos una empresa especializada en la distribución de productos
-              de abarrote en la región y sus alrededores, con personal
-              productivo y enfocado al logro de objetivos con atención
-              personalizada a nuestros clientes y con entrega de producto máximo
-              24HRS".
+              "Especializados en la distribución de productos básicos para el hogar, con personal productivo y con la infrestructura apropiada para ofrecer un servicio personalizado en nuestros puntos de venta en Pátzcuaro, y con entrega ágil y eficiente máximo a ñas 24 horas para nuestro clientes al interior del estado de Michoacán".
             </p>
           </div>
           <div className="acercaVision">
             <h1>Visión</h1>
             <p>
-              "Ser una empresa líder en la distribución de abarrote en la región
-              de Pátzcuaro y sus alrededores y con presencia competitiva al
-              interior de Michoacán".
+              "Ser la empresa líder en la distribución de productos básicos para el hogar en la ciudad de Pátzcuaro y con presencia competitiva al interior del estado de Michoacán, distinguiéndose por su servicio en 24 horas".
             </p>
           </div>
         </div>
         <div className="acercaDeNosotros">
           <div className="valores">
             <h1>Valores</h1>
-            <section className="cuadro-valores">
+            {/* <section className="cuadro-valores">
               <img src={honradez} alt="" />
               <img src={AmorAlTrabajo} alt="" />
               <img src={Gratitud} alt="" />
@@ -56,8 +51,8 @@ export class Nosotros extends Component {
               <img src={RespetoPorElDerecho} alt="" />
               <img src={responsabilidad} alt="" />
               <img src={tenacidad} alt="" />
-            </section>
-            {/*  <ul className="cuadro-valores">
+            </section> */}
+             <ul className="cuadro-valores">
               <li>
                 <strong>Tenacidad: </strong>Proponemos lograr un objetivo no
                 parar hasta lograrlo.
@@ -101,7 +96,7 @@ export class Nosotros extends Component {
                 nuestras actividades y logros que obtenemos un alimento diario
                 que me mantenga motivado(a)
               </li>
-            </ul> */}
+            </ul>
           </div>
         </div>
       </div>

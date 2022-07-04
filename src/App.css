@@ -21,7 +21,7 @@ body {
   margin: 0;
   color: #000;
   font-family: "sans-serif";
- 
+
   min-height: 100vh;
 }
 /* TODO::
@@ -89,7 +89,7 @@ Iniciamos con la parte de home */
   align-items: center;
   justify-content: center;
 }
-.mensaje-home{
+.mensaje-home {
   text-align: center;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
@@ -222,7 +222,7 @@ Empezamos la parte de pie de pagina o footer*/
   padding: 10px;
   text-decoration: none;
   color: #000;
-  
+
   font-weight: bolder;
 }
 .item-footer {
@@ -230,13 +230,10 @@ Empezamos la parte de pie de pagina o footer*/
   margin: 5px;
   display: flex;
   white-space: pre-wrap;
-
-  
 }
 .item-footer:first-child {
   justify-content: flex-start;
 }
-
 
 .item-footer:nth-child(3) {
   text-transform: none;
@@ -283,7 +280,8 @@ Empezamos la parte de pie de pagina o footer*/
 }
 
 .datos-sucursal img {
-  width: 100%;
+  margin: 5px;
+  width: 97%;
   height: 50%;
   border-radius: 15px;
   object-fit: contain;
@@ -333,16 +331,20 @@ Empezamos la parte de pie de pagina o footer*/
   font-size: 2vmin;
   text-align: center;
 }
+.items-rutas{
+  background-color: #ececec;
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+  margin: 5px;
+}
 .rutas-data {
   margin: 5px;
   border-radius: 15px;
-  
-  
 }
-.rutas-data ol{
+.rutas-data ol {
   list-style: none;
 }
-.rutas-lista{
+.rutas-lista {
   text-align: left;
   list-style: none;
 }
@@ -361,7 +363,6 @@ Empezamos la parte de pie de pagina o footer*/
   border: none;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
-  
 }
 
 .texto-rutas ol {
@@ -392,21 +393,25 @@ Empezamos la parte de pie de pagina o footer*/
 /* TODO: Empezamos la parte de conctacto*/
 .container-contacto {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.prueba-contacto{
+  background-color: #ececec;
+  border-radius: 15px 15px 0 0;
+  margin: 10px;
 }
 .items-contactos img {
   padding: 10px;
   width: 100%;
   border-radius: 15px;
 }
-.mensaje-contacto{
-  
+.mensaje-contacto {
+  width: 90%;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
-  margin-bottom: 80px;
+ 
 }
 .contenedor-items {
   width: 80%;
@@ -429,7 +434,10 @@ Empezamos la parte de pie de pagina o footer*/
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  background-color: #ececec;
+  border-radius: 15px 15px 0 0;
+  margin: 10px;
+ 
 }
 
 .acercaDeNosotros {
@@ -459,7 +467,6 @@ Empezamos la parte de pie de pagina o footer*/
   padding: 10px;
 }
 .valores {
-  
   text-align: left;
 }
 .valores li {
@@ -467,8 +474,7 @@ Empezamos la parte de pie de pagina o footer*/
   list-style-position: inside;
 }
 
-.cuadro-valores img{
-
+.cuadro-valores img {
   width: 350px;
   margin-left: 0;
   margin-right: 0;
@@ -521,7 +527,7 @@ Empezamos la parte de pie de pagina o footer*/
     width: 100px;
     order: 2;
   }
- 
+
   /* FIXME: Finaliza el nav Bar */
 
   /*TODO: Empieza el home */
@@ -529,9 +535,8 @@ Empezamos la parte de pie de pagina o footer*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-  .mensaje-home{
+  .mensaje-home {
     grid-column: 1/-1;
-
   }
   .seccion-info {
     grid-column: 1/-1;
@@ -586,7 +591,7 @@ Empezamos la parte de pie de pagina o footer*/
     grid-template-columns: repeat(3, minmax(150px, 1fr));
   }
   .datos-sucursal img {
-    width: 100%;
+    width: 99%;
     height: 100%;
   }
   .info-sucursal {
@@ -594,7 +599,7 @@ Empezamos la parte de pie de pagina o footer*/
     font-size: 15px;
   }
   .mapa-sucursal {
-    grid-column: 2/-1;
+    grid-column: 1/-1;
   }
   .mapa-sucursal iframe {
     height: 100%;
@@ -602,14 +607,17 @@ Empezamos la parte de pie de pagina o footer*/
   /* FIXME: Finaliza la parte de sucursales */
 
   /* TODO: Empezamos lo de rutas */
-  .container-rutas {
+
+  .items-rutas {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
-  .rutas-data {
+  .encabezadoRutas {
     grid-column: 1/-1;
-    margin: 2px;
+  }
 
+  .rutas-data {
+    margin: 2px;
     border-radius: 10px;
   }
   .rutas-data:nth-child(3) {
@@ -620,7 +628,6 @@ Empezamos la parte de pie de pagina o footer*/
   }
   .texto-rutas {
     width: 100%;
-
     font-size: 3vmin;
     border-radius: 15px;
   }
@@ -648,19 +655,18 @@ Empezamos la parte de pie de pagina o footer*/
   /* FIXME: Terminamos la parte de acerca de nosotros*/
   /* TODO: Empieza el componente de contacto  */
 
-  .container-contacto{
+  
+  .prueba-contacto{
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
-    
   }
-  .contenedor-items{
+  .contenedor-items {
     margin: 20px;
   }
 
-.mensaje-contacto{
-  grid-column: 1/-1;
-  text-align: center;
- 
-}
+  .mensaje-contacto {
+    grid-column: 1/-1;
+    text-align: center;
+  }
   /* FIXME: Terminamos el componente de contacto */
 }

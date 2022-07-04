@@ -52,14 +52,11 @@ export class Contacto extends Component {
       <div className="spinner"></div>
     ) : (
       <div className="container-contacto">
-          
         <div className="mensaje-contacto">
-
-          <h1>Déjanos tu mensaje</h1>
+          <b>Déjanos tu mensaje</b>
         </div>
-  
+<div className="prueba-contacto">
         <section className="contenedor-items">
-       
           <div className="items-contactos ">
             {/* aqui empieza el formulario */}
             <form onSubmit={_handleSubmit}>
@@ -143,10 +140,11 @@ export class Contacto extends Component {
             </form>
           </div>
         </section>
+        
         <div className="items-contactos">
           <img src={atencion} alt="Contacto" />
         </div>
-     
+        </div>
       </div>
     );
   }
