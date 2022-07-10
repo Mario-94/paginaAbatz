@@ -88,18 +88,23 @@ Iniciamos con la parte de home */
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 .mensaje-home {
   text-align: center;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
+  
 }
 .home-item {
   padding: 10px;
+ 
 }
 .info-home {
   background-color: #ececec;
   border-radius: 15px 0 0 15px;
+  
+
 }
 
 .info-home h3,
@@ -112,14 +117,30 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
   color: rgb(192, 133, 24);
 }
-.info-home img {
+/* .info-home img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
+} */
 
-/*TODO: 
+/*FIXME: 
 Fin de la parte de home */
+/* TODO: Empezamos la parted de Carrusel*/
+.carruselImg-Container{
+ width: 90%;
+height:90px;
+
+margin-left: auto;
+margin-right: auto;
+}
+.items-carrusel img{
+  padding: 10px;
+  border: 10px solid black;
+  width: 80%;
+  height: 50%;
+  object-fit: contain;
+}
+/* FIXME: Final de la parte de Carrusel */
 /* parte de los items de las imagenes de los productos que estan en oferta */
 /* Este es el container-Card de home*/
 .container-Card {
@@ -574,7 +595,20 @@ Empezamos la parte de pie de pagina o footer*/
   }
 
   /*FIXME: Termina el home */
+/* TODO: Empezamos la parted de Carrusel*/
 
+.items-carrusel{
+  height: 290px;
+}
+.items-carrusel img{
+  
+   padding: 10px;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   
+ }
+ /* FIXME: Final de la parte de Carrusel */
   /* TODO: Empezamos con la parte de sucursales*/
 
   .container-sucursal {

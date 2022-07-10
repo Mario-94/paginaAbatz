@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
-import tienda from "../images/tienda.jpg";
+// import tienda from "../images/tienda.jpg";
 import CardImage from "./CardImage";
+import Carousel from "./Carousel";
 export class Home extends Component {
   // dejamos el spinner para ahora que pintemos las ofertas en lo que obtenemos respuesta del servidor, se dejara como muestra
   constructor(props) {
@@ -27,9 +28,10 @@ export class Home extends Component {
             <section className="seccion-info">
               <div className="home-item">
                 <div className="info-home">
-                  <h1><b>
-                  En abatz  tus ganancias llegan rápido
-                    </b></h1>
+                  <h1>
+                    <b>En abatz tus ganancias llegan rápido</b>
+                  </h1>
+                  <Carousel className="carruselImg-Container"/>
                 </div>
 
                 <h2 className="ofertasSemana">Ofertas de la semana</h2>
@@ -38,7 +40,6 @@ export class Home extends Component {
 
             {/* <Paginacion/> */}
             <div className="container-Card">
-         
               <CardImage />
             </div>
           </div>
