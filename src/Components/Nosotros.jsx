@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import "../App.css";
+import logo from "../images/Icono.png";
+import noventaVeinticuatro from "../images/logo-9024.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 // import honradez from "../images/honradez.png";
 // import AmorAlTrabajo from "../images/AmorAlTrabajo.png";
 // import Gratitud from "../images/Gratitud.png";
@@ -8,13 +12,14 @@ import "../App.css";
 // import RespetoPorElDerecho from "../images/RespetoPorElDerecho.png";
 // import responsabilidad from "../images/responsabilidad.png";
 // import tenacidad from "../images/tenacidad.png";
+
 export class Nosotros extends Component {
   render() {
     return (
       <div className="container-acerdaDe">
-        
         <div className="acercaDeNosotros">
           <h1>Quiénes somos?</h1>
+          <img src={logo} alt="logo" title="Abatz" className="logo-nosotros" />
           <p>
             "Somos una empresa distribuidora de comestibles y productos afines
             en el mercado del abarrote, dentro de la región de Michoacán y con
@@ -29,72 +34,79 @@ export class Nosotros extends Component {
           <div className="acercaMision">
             <h1>Misión</h1>
             <p>
-              "Especializados en la distribución de productos básicos para el hogar, con personal productivo y con la infrestructura apropiada para ofrecer un servicio personalizado en nuestros puntos de venta en Pátzcuaro, y con entrega ágil y eficiente máximo a ñas 24 horas para nuestro clientes al interior del estado de Michoacán".
+              "Especializados en la distribución de productos básicos para el
+              hogar, con personal productivo y con la infrestructura apropiada
+              para ofrecer un servicio personalizado en nuestros puntos de venta
+              en Pátzcuaro, y con entrega ágil y eficiente máximo a las 24 horas
+              para nuestro clientes al interior del estado de Michoacán".
             </p>
           </div>
+          <img
+            src={noventaVeinticuatro}
+            alt=""
+            className="noventaVeintiCuatro-nosotros"
+          />
           <div className="acercaVision">
             <h1>Visión</h1>
             <p>
-              "Ser la empresa líder en la distribución de productos básicos para el hogar en la ciudad de Pátzcuaro y con presencia competitiva al interior del estado de Michoacán, distinguiéndose por su servicio en 24 horas".
+              "Ser la empresa líder en la distribución de productos básicos para
+              el hogar en la ciudad de Pátzcuaro y con presencia competitiva al
+              interior del estado de Michoacán, distinguiéndose por su servicio
+              en 24 horas".
             </p>
           </div>
         </div>
         <div className="acercaDeNosotros">
           <div className="valores">
             <h1>Valores</h1>
-            {/* <section className="cuadro-valores">
-              <img src={honradez} alt="" />
-              <img src={AmorAlTrabajo} alt="" />
-              <img src={Gratitud} alt="" />
-              <img src={honestidad} alt="" />
-              <img src={puntualidad} alt="" />
-              <img src={RespetoPorElDerecho} alt="" />
-              <img src={responsabilidad} alt="" />
-              <img src={tenacidad} alt="" />
-            </section> */}
-             <ul className="cuadro-valores">
+
+            <ul className="cuadro-valores">
+              <p className=" integrate">
+                La integracion entre un equipo de trabajo es la clave, es por
+                eso que en ABATZ fomentamos los siguientes valores, para que
+                nuestros empleados y clientes se sientan integrados en esta
+                familia:
+              </p>
+
               <li>
-                <strong>Tenacidad: </strong>Proponemos lograr un objetivo no
-                parar hasta lograrlo.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Respeto
               </li>
               <li>
-                <strong>Honradez:</strong> Basamos nuestro actor en la sinceridad de pensamiento y acción.
-                El respeto a las cosas ajenas y la no intervención en la vida y
-                asuntos personales de nuestros compañeros.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Integridad
               </li>
               <li>
-                <strong>Puntualidad:</strong> La buena organización y efectiva
-                planeación, nos obliga a cumplir con nuestro compromiso en
-                tiempo y forma.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Gratitud
               </li>
               <li>
-                <strong>Responsabilidad:</strong> Es hacer nuestro trabajo,
-                concluir con la tarea encomendada, es responder por nuestra
-                actividad y aceptar con seriedad nuestros compromisos.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Calidad
               </li>
               <li>
-                <strong>Honestidad:</strong> Es tener la verdad como principio
-                básico, que nuestras acciones sean correctas, nos hacen ser
-                congruentes con nuestro sistema de creencias tener conciencia de
-                lo que llevamos a cabo en nuestro actuar y pensar, con el
-                objetivo de tener confianza en nosotros mismos.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Confianza
               </li>
               <li>
-                <strong>Gratitud:</strong> La amistad, la bondad entre nosotros
-                nos brindan solidad, y al final de nuestra jornada laboral
-                podemos dar la gracias por trabajar en equipo y pertenecer a una
-                empresa que permita tener un desarrollo laboral continuo.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Honestidad
               </li>
               <li>
-                <strong>Respeto por el derecho:</strong> Tomar en cuenta a todos
-                nuestros compañeros, rechazar cualquier propósito de ofensa o
-                agresión, tenemos la convicción de escuchar y aceptar puntos de
-                vista diferentes a los nuestros.
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Compromiso
               </li>
               <li>
-                <strong>Amor al trabajo:</strong> Trabajar con gusto, que sean
-                nuestras actividades y logros que obtenemos un alimento diario
-                que me mantenga motivado(a)
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Responsabilidad
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Equipo
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                Pasion
               </li>
             </ul>
           </div>

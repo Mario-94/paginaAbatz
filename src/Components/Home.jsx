@@ -2,15 +2,24 @@ import React, { Component } from "react";
 import "../App.css";
 // import tienda from "../images/tienda.jpg";
 import CardImage from "./CardImage";
-import Carousel from "./Carousel";
+import CarruselImagenes from "./Carousel";
+import axios from "axios";
 export class Home extends Component {
   // dejamos el spinner para ahora que pintemos las ofertas en lo que obtenemos respuesta del servidor, se dejara como muestra
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: true };
-  }
+
+  state = { isLoading: true, fechas: [] };
+
   componentDidMount() {
-    this.setState({ isLoading: false });
+    axios
+      .get(`https://mario-94.github.io/pruebaJson/bd/bd.json`)
+      .then((res) => {
+        const fechas = res.data;
+
+        this.setState({ fechas, isLoading: false });
+      })
+      .catch((e) => {
+        console.log("Revisar su conexion", e);
+      });
   }
   render() {
     return (
@@ -31,10 +40,15 @@ export class Home extends Component {
                   <h1>
                     <b>En abatz tus ganancias llegan rápido</b>
                   </h1>
-                  <Carousel className="carruselImg-Container"/>
+                  <CarruselImagenes className="carruselImg-Container" />
                 </div>
 
-                <h2 className="ofertasSemana">Ofertas de la semana</h2>
+                <h2 className="ofertasSemana">
+                  Ofertas de la semana del
+                  <b> {this.state.fechas.products[1].fechaInicio} </b>
+                  al
+                  <b> {this.state.fechas.products[1].fechaFin} </b>
+                </h2>
               </div>
             </section>
 

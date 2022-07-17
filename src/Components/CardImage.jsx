@@ -1,19 +1,18 @@
-
 // import ModalOfertas from "./ModalOfertas"; por el momento ya no pondremos el modal, por que es un paso mas que estaria haciendo, ya en caso de agregar el carrito de compras pues hay si se haria esta parte
 import axios from "axios";
 import React from "react";
 import "../App.css";
+
+
 export class CardImage extends React.Component {
   state = {
     currentPage: 1,
-    todosPerPage: 21,
+    todosPerPage: 20,
     items: [],
     bandera: false,
     //img: "https://picsum.photos/318/180"
   };
-  _subir(){
-    
-  }
+
   _valorReal(precio, porcentaje) {
     const resultado = precio - (precio * porcentaje) / 100;
     return resultado.toFixed(2);
@@ -45,10 +44,10 @@ export class CardImage extends React.Component {
     const start = (page - 1) * todosPerPage;
     const end = page * todosPerPage;
     const currentTodos = items.slice(start, end);
-    const renderTodos = currentTodos.map((dato,index) => {
+    const renderTodos = currentTodos.map((dato, index) => {
       return (
         <div key={index}>
-          
+     
           {/* Esta es la imagen */}
 
           <div className="item-card">
@@ -62,10 +61,10 @@ export class CardImage extends React.Component {
               <p className="card-description"> {dato.Descripcion1}</p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
               <p className="precio-item">
-                PRECIO POR {dato.Unidad} <b>$</b> 
+                PRECIO POR {dato.Unidad} <b>$</b>
                 <span className="precio-real">
-                {this._valorReal(dato.Precio, dato.Porcentaje)}
-                  </span>
+                  {this._valorReal(dato.Precio, dato.Porcentaje)}
+                </span>
               </p>
             </div>
           </div>
@@ -79,14 +78,14 @@ export class CardImage extends React.Component {
       pageNumbers.push(i);
     }
     // Este es el encargado de mostrar los items a mostrar
-    const renderPageNumbers = pageNumbers.map((number,index) => {
+    const renderPageNumbers = pageNumbers.map((number, index) => {
       return (
         <div key={index}>
-          <ul >
+          <ul>
             <li className="item-pagination">
               {/* el id lo utilizo para cambiar entre hojas
                */}
-              <div  id={number} onClick={this._handleClick}>
+              <div id={number} onClick={this._handleClick}>
                 {number}
               </div>
             </li>
@@ -99,9 +98,10 @@ export class CardImage extends React.Component {
         {this.state.bandera === true ? (
           <div>
             {/* En esta parte es donde inicia la representacion de las cardImg */}
-               {/* <span class="ir-arriba icon-arrow-up2"></span> */}
+            {/* <span class="ir-arriba icon-arrow-up2"></span> */}
+
             <div className="container-CardItems">{renderTodos}</div>
-            <div className="container-pagination" >{renderPageNumbers}</div>
+            <div className="container-pagination">{renderPageNumbers}</div>
           </div>
         ) : (
           <div className="spinner"></div>

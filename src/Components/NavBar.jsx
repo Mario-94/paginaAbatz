@@ -21,9 +21,11 @@ function NavBar() {
       <div className="navBar">
         {/* este lo tuilizare como si fuera el menu de hamburguesa */}
         <div className="nav-logo-abatz">
-          <img src={logo} alt="logo" title="Abatz" className="logo" />{" "}
-        <span>ABATZ</span>
+          <img src={logo} alt="logo" title="Abatz" className="logo" />
+       
+          <h2>ABATZ</h2>
         </div>
+        
         <FontAwesomeIcon
           className="hamburger"
           icon={faBars}

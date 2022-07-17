@@ -9,7 +9,7 @@ import Contacto from "./Components/Contacto"
 import Footer from "./Components/Footer";
 import Paginacion from './Components/Paginacion';
 import NavBar from './Components/NavBar'
-
+import PruebaConexion from './Components/pruebaConexion';
 function App() {
   return (
    
@@ -35,7 +35,7 @@ function App() {
           <Route exact path="/nosotros">
             <Nosotros />
           </Route>
-          <Route exactpath="/contacto">
+          <Route exact path="/contacto">
             <Contacto />
           </Route>
           {/* Esta solo es de pruebas */}
@@ -44,6 +44,9 @@ function App() {
 </Route> */}
           <Route exact path="/paginacion">
             <Paginacion />
+          </Route>
+          <Route exact path="/prueba">
+            <PruebaConexion />
           </Route>
         </Switch>
         <Footer/>

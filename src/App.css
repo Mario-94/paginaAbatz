@@ -44,6 +44,10 @@ Toda esta parte es de NavBar */
   padding: 15px 5px;
   white-space: nowrap;
 }
+.nav-logo-abatz
+ img{
+  border: 1px solid black;
+}
 
 .navBarItems a {
   text-decoration: none;
@@ -88,23 +92,18 @@ Iniciamos con la parte de home */
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 .mensaje-home {
   text-align: center;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
-  
 }
 .home-item {
   padding: 10px;
- 
 }
 .info-home {
   background-color: #ececec;
   border-radius: 15px 0 0 15px;
-  
-
 }
 
 .info-home h3,
@@ -115,7 +114,7 @@ h1 {
   margin-top: 10px;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  color: rgb(192, 133, 24);
+  color: #d63d3d;
 }
 /* .info-home img {
   margin-left: auto;
@@ -126,14 +125,14 @@ h1 {
 /*FIXME: 
 Fin de la parte de home */
 /* TODO: Empezamos la parted de Carrusel*/
-.carruselImg-Container{
- width: 90%;
-height:90px;
+.carruselImg-Container {
+  width: 90%;
+  height: 90px;
 
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-.items-carrusel img{
+.items-carrusel img {
   padding: 10px;
   border: 10px solid black;
   width: 80%;
@@ -150,6 +149,7 @@ margin-right: auto;
   width: 100%;
   text-align: center;
 }
+
 /* Este hace referencia al componente CardImage */
 .container-CardItems {
   display: flex;
@@ -169,13 +169,19 @@ margin-right: auto;
   padding: 5px;
   border: 2px solid #ececec;
   border-radius: 15px 15px 15px 15px;
-  margin: 2px;
+
+  margin: 8px;
   box-shadow: 3px 3px 3px black;
 }
 .item-card img {
   width: 80%;
   height: 50%;
   object-fit: contain;
+}
+.item-card:hover {
+  background-color: #ffff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .card-info-item {
@@ -352,7 +358,7 @@ Empezamos la parte de pie de pagina o footer*/
   font-size: 2vmin;
   text-align: center;
 }
-.items-rutas{
+.items-rutas {
   background-color: #ececec;
   border-radius: 15px 15px 0 0;
   padding: 10px;
@@ -418,7 +424,7 @@ Empezamos la parte de pie de pagina o footer*/
   justify-content: center;
   align-items: center;
 }
-.prueba-contacto{
+.prueba-contacto {
   background-color: #ececec;
   border-radius: 15px 15px 0 0;
   margin: 10px;
@@ -432,7 +438,6 @@ Empezamos la parte de pie de pagina o footer*/
   width: 90%;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
- 
 }
 .contenedor-items {
   width: 80%;
@@ -458,7 +463,7 @@ Empezamos la parte de pie de pagina o footer*/
   background-color: #ececec;
   border-radius: 15px 15px 0 0;
   margin: 10px;
- 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .acercaDeNosotros {
@@ -469,6 +474,16 @@ Empezamos la parte de pie de pagina o footer*/
   border: none;
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
+}
+.logo-nosotros {
+width: 150px;
+}
+.noventaVeintiCuatro-nosotros
+{
+  width: 350px;
+}
+.misionVision img{
+  object-fit: fill;
 }
 
 .misionVision {
@@ -491,15 +506,23 @@ Empezamos la parte de pie de pagina o footer*/
   text-align: left;
 }
 .valores li {
-  list-style-type: square;
+  
+  list-style: none;
   list-style-position: inside;
+
 }
 
+.valoresList{
+  
+padding: 5px;
+color: #f23838;
+}
 .cuadro-valores img {
   width: 350px;
   margin-left: 0;
   margin-right: 0;
 }
+
 /* FIXME: Terminamos la parte de acerca de nosotros*/
 /* TODO: Empieza spinner de carga de pagina */
 .spinner {
@@ -523,6 +546,14 @@ Empezamos la parte de pie de pagina o footer*/
 }
 
 /* FIXME: Termina el spinner de carga*/
+/* TODO: Prueba de nosotros logo */
+.pruebaNosotros {
+  height: 60px;
+
+  color: #f23838; /* con esto pondre el color de la imagen */
+}
+
+/* FIXME::Termina la prueba de logo nosotros */
 
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
 @media screen and (min-width: 520px) {
@@ -595,20 +626,18 @@ Empezamos la parte de pie de pagina o footer*/
   }
 
   /*FIXME: Termina el home */
-/* TODO: Empezamos la parted de Carrusel*/
+  /* TODO: Empezamos la parted de Carrusel*/
 
-.items-carrusel{
-  height: 290px;
-}
-.items-carrusel img{
-  
-   padding: 10px;
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
-   
- }
- /* FIXME: Final de la parte de Carrusel */
+  .items-carrusel {
+    height: 290px;
+  }
+  .items-carrusel img {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /* FIXME: Final de la parte de Carrusel */
   /* TODO: Empezamos con la parte de sucursales*/
 
   .container-sucursal {
@@ -683,14 +712,30 @@ Empezamos la parte de pie de pagina o footer*/
 
   .misionVision {
     display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  .noventaVeintiCuatro-nosotros{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+   
+  }
+  
+  .cuadro-valores {
+    display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+    /* text-align: center; */
+
+  }
+  .integrate{
+     grid-column: 1/-1; 
+     text-align: center;
   }
 
   /* FIXME: Terminamos la parte de acerca de nosotros*/
   /* TODO: Empieza el componente de contacto  */
 
-  
-  .prueba-contacto{
+  .prueba-contacto {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
   }

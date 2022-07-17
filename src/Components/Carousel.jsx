@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import logoNoventa from "../images/logo-9024.jpeg";
-export default () => (
+  const CarruselImagenes=() =>(
   <Carousel autoPlay >
     <div className="items-carrusel">
       <img alt="" src={logoNoventa} />
@@ -20,3 +20,5 @@ export default () => (
     </div>
   </Carousel>
 );
+
+export default CarruselImagenes;
