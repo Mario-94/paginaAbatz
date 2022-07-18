@@ -44,9 +44,19 @@ Toda esta parte es de NavBar */
   padding: 15px 5px;
   white-space: nowrap;
 }
+/* 
+Se deja comentada esta linea por si se ocupa dar algun efecto al logo abatz
 .nav-logo-abatz
  img{
-  border: 1px solid black;
+  
+} */
+.abatz-NavBar{
+  /* En esta parte es lo del nombre de abatz, solo es cuestion de revision para ver si se cambia el tipo de letra */
+  text-align: center;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+
+  color: #ececec;
 }
 
 .navBarItems a {
@@ -186,7 +196,7 @@ Fin de la parte de home */
 
 .card-info-item {
   height: 50%;
-  margin: 0;
+ 
   background-color: orange;
   border-radius: 0 0 15px 15px;
 }
@@ -194,12 +204,11 @@ Fin de la parte de home */
 .card-description {
   font-size: 15px;
 }
-
 .precio-item {
-  font-size: 13px;
+  font-size: 10px;
 }
 .precio-real {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -402,13 +411,17 @@ Empezamos la parte de pie de pagina o footer*/
 .rutas-lista {
   width: 100%;
 }
+
 .oculta-rutas-estilo {
   /* con esto controlo que se ajuste deacuerdo al texto de lo contrario ocupa el espacio de la lista aun que no se muestre */
   display: none;
+  
   visibility: hidden;
 } /* en estas dos siguientes solo hago el visbility:visible solo para que no este solo, no afecta si lo quito */
-.mostrar-rutas-estilo {
+
+.mostrar-rutas-estilo{
   visibility: visible;
+ 
 }
 .bottom-mostrar-rutas {
   visibility: visible;
@@ -468,6 +481,9 @@ Empezamos la parte de pie de pagina o footer*/
 
 .acercaDeNosotros {
   width: 90%;
+  margin: 5px;
+  background-color: #ececec;
+  
 }
 .acercaDeNosotros h1 {
   text-align: center;
@@ -475,11 +491,17 @@ Empezamos la parte de pie de pagina o footer*/
   border-bottom: 5px solid transparent;
   border-image: -webkit-radial-gradient(red, transparent) 1 10;
 }
+.mision-Texto{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+}
 .logo-nosotros {
 width: 150px;
 }
 .noventaVeintiCuatro-nosotros
 {
+  border-radius: 15px;
   width: 350px;
 }
 .misionVision img{
@@ -499,9 +521,11 @@ width: 150px;
   text-align: left;
 }
 .acercaVision {
+ 
   text-align: right;
   padding: 10px;
 }
+
 .valores {
   text-align: left;
 }
@@ -556,7 +580,7 @@ color: #f23838;
 /* FIXME::Termina la prueba de logo nosotros */
 
 /* Esta es para cuando es pantallas de escritorios o tabletas en modo vertical */
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 530px) {
   /* TODO: Nav Bar de la pagina  */
   .hamburger {
     display: none;

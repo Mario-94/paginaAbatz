@@ -20,7 +20,7 @@ export class Nosotros extends Component {
         <div className="acercaDeNosotros">
           <h1>Quiénes somos?</h1>
           <img src={logo} alt="logo" title="Abatz" className="logo-nosotros" />
-          <p>
+          <p className="mision-Texto">
             "Somos una empresa distribuidora de comestibles y productos afines
             en el mercado del abarrote, dentro de la región de Michoacán y con
             presencia en Guanajuato. Fundada en 1993 por Antonio Villagómez
@@ -33,7 +33,7 @@ export class Nosotros extends Component {
         <div className="misionVision">
           <div className="acercaMision">
             <h1>Misión</h1>
-            <p>
+            <p className="mision-Texto">
               "Especializados en la distribución de productos básicos para el
               hogar, con personal productivo y con la infrestructura apropiada
               para ofrecer un servicio personalizado en nuestros puntos de venta
@@ -48,7 +48,7 @@ export class Nosotros extends Component {
           />
           <div className="acercaVision">
             <h1>Visión</h1>
-            <p>
+            <p className="mision-Texto">
               "Ser la empresa líder en la distribución de productos básicos para
               el hogar en la ciudad de Pátzcuaro y con presencia competitiva al
               interior del estado de Michoacán, distinguiéndose por su servicio
@@ -60,8 +60,8 @@ export class Nosotros extends Component {
           <div className="valores">
             <h1>Valores</h1>
 
-            <ul className="cuadro-valores">
-              <p className=" integrate">
+            <ul className="cuadro-valores mision-Texto">
+              <p className="integrate">
                 La integracion entre un equipo de trabajo es la clave, es por
                 eso que en ABATZ fomentamos los siguientes valores, para que
                 nuestros empleados y clientes se sientan integrados en esta
@@ -69,43 +69,83 @@ export class Nosotros extends Component {
               </p>
 
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Respeto
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Integridad
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Gratitud
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Calidad
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Confianza
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Honestidad
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Compromiso
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Responsabilidad
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Equipo
               </li>
               <li>
-                <FontAwesomeIcon icon={faBagShopping} title="Valores"className="valoresList" />
+                <FontAwesomeIcon
+                  icon={faBagShopping}
+                  title="Valores"
+                  className="valoresList"
+                />
                 Pasion
               </li>
             </ul>

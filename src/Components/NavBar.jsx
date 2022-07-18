@@ -23,7 +23,7 @@ function NavBar() {
         <div className="nav-logo-abatz">
           <img src={logo} alt="logo" title="Abatz" className="logo" />
        
-          <h2>ABATZ</h2>
+          <p className="abatz-NavBar">ABATZ</p>
         </div>
         
         <FontAwesomeIcon

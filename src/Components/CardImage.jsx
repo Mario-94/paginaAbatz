@@ -2,8 +2,6 @@
 import axios from "axios";
 import React from "react";
 import "../App.css";
-
-
 export class CardImage extends React.Component {
   state = {
     currentPage: 1,
@@ -58,13 +56,16 @@ export class CardImage extends React.Component {
               title="Articulo"
             />
             <div className="card-info-item">
-              <p className="card-description"> {dato.Descripcion1}</p>
+              <p className="card-description "> {dato.Descripcion1}</p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
-              <p className="precio-item">
-                PRECIO POR {dato.Unidad} <b>$</b>
-                <span className="precio-real">
+              
+              <span className="precio-real">
+                <b>$</b>
                   {this._valorReal(dato.Precio, dato.Porcentaje)}
                 </span>
+              <p className="precio-item">
+                PRECIO POR {dato.Unidad} 
+               
               </p>
             </div>
           </div>

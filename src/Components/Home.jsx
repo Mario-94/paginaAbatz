@@ -30,16 +30,12 @@ export class Home extends Component {
           <div className="home-container">
             <div className="mensaje-home">
               <h3>
-                Nos encontramos ubicados en Lib. Gral. Ignacion #250 Col. Centro
-                Pátzcuaro
+              En abatz tus ganancias llegan rápido
               </h3>
             </div>
             <section className="seccion-info">
               <div className="home-item">
-                <div className="info-home">
-                  <h1>
-                    <b>En abatz tus ganancias llegan rápido</b>
-                  </h1>
+                <div className="info-home">                 
                   <CarruselImagenes className="carruselImg-Container" />
                 </div>
 
