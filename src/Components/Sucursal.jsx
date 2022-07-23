@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Super from "../images/fachada-super.jpeg";
 import matriz from "../images/fachada-matriz.jpg";
-import pueblita from "../images/fachada-pueblita.jpg";
+import pueblita from "../images/fachada-pueblita.jpeg";
 import "../App.css";
 
 export class Sucursal extends Component {

@@ -4,6 +4,7 @@ import "../App.css";
 import CardImage from "./CardImage";
 import CarruselImagenes from "./Carousel";
 import axios from "axios";
+
 export class Home extends Component {
   // dejamos el spinner para ahora que pintemos las ofertas en lo que obtenemos respuesta del servidor, se dejara como muestra
 
@@ -47,11 +48,12 @@ export class Home extends Component {
                 </h2>
               </div>
             </section>
-
             {/* <Paginacion/> */}
             <div className="container-Card">
               <CardImage />
             </div>
+
+            
           </div>
         )}
       </div>

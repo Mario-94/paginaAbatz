@@ -203,9 +203,13 @@ Fin de la parte de home */
 
 .card-description {
   font-size: 15px;
+  text-decoration: underline   black;
 }
 .precio-item {
-  font-size: 10px;
+  font-size: 9px;
+}
+.unidad-medida{
+  font-size: 12px;
 }
 .precio-real {
   font-size: 25px;
@@ -630,7 +634,7 @@ color: #f23838;
     margin-right: auto;
   }
   .info-home {
-    height: 450px;
+    height: 290px;
   }
 
   .info-home h3 {
@@ -653,7 +657,7 @@ color: #f23838;
   /* TODO: Empezamos la parted de Carrusel*/
 
   .items-carrusel {
-    height: 290px;
+    height: 200px;
   }
   .items-carrusel img {
     padding: 10px;

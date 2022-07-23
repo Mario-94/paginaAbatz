@@ -1,13 +1,17 @@
 // import ModalOfertas from "./ModalOfertas"; por el momento ya no pondremos el modal, por que es un paso mas que estaria haciendo, ya en caso de agregar el carrito de compras pues hay si se haria esta parte
 import axios from "axios";
 import React from "react";
+
 import "../App.css";
+
 export class CardImage extends React.Component {
   state = {
+    subir:'',
     currentPage: 1,
     todosPerPage: 20,
     items: [],
     bandera: false,
+
     //img: "https://picsum.photos/318/180"
   };
 
@@ -17,10 +21,19 @@ export class CardImage extends React.Component {
   }
   //Este metodo se encarga de realizar la actualizacion de la pagina
   _handleClick = (event) => {
-    this.setState({ currentPage: parseInt(event.target.id) });
+   
+    this.setState({ currentPage: parseInt(event.target.id)});
+    
+    if (this.state.subir === true) {
+      window.scrollTo({
+        top: 10,
+        behavior: "auto",
+      });
+    }
   };
 
   componentDidMount() {
+    this.setState({subir: true })
     axios
       .get(
         `https://mario-94.github.io/pruebaJson/bd/bd.json?page=${this.state.paginaInicio}`
@@ -45,7 +58,6 @@ export class CardImage extends React.Component {
     const renderTodos = currentTodos.map((dato, index) => {
       return (
         <div key={index}>
-     
           {/* Esta es la imagen */}
 
           <div className="item-card">
@@ -56,16 +68,18 @@ export class CardImage extends React.Component {
               title="Articulo"
             />
             <div className="card-info-item">
-              <p className="card-description "> {dato.Descripcion1}</p>
+              <p className="card-description ">
+                <b>{dato.Descripcion1}</b>
+              </p>
               {/*con toFixed(2) controlo el punto decimal de dos carecteres*/}
-              
+
               <span className="precio-real">
                 <b>$</b>
-                  {this._valorReal(dato.Precio, dato.Porcentaje)}
-                </span>
+                {this._valorReal(dato.Precio, dato.Porcentaje)}
+              </span>
               <p className="precio-item">
-                PRECIO POR {dato.Unidad} 
-               
+                PRECIO POR:
+                <b className="unidad-medida"> {dato.Unidad}</b>
               </p>
             </div>
           </div>

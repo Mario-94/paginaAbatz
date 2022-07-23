@@ -45,9 +45,9 @@ function App() {
           <Route exact path="/paginacion">
             <Paginacion />
           </Route>
-          <Route exact path="/prueba">
+          {/* <Route exact path="/prueba">
             <PruebaConexion />
-          </Route>
+          </Route> */}
         </Switch>
         <Footer/>
       </Router>
