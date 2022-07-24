@@ -6,7 +6,7 @@ import "../App.css";
 
 export class CardImage extends React.Component {
   state = {
-    subir:'',
+    subir:true,
     currentPage: 1,
     todosPerPage: 20,
     items: [],
@@ -33,7 +33,7 @@ export class CardImage extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({subir: true })
+
     axios
       .get(
         `https://mario-94.github.io/pruebaJson/bd/bd.json?page=${this.state.paginaInicio}`
